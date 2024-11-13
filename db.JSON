@@ -1,0 +1,49 @@
+{
+    "on-campus": [
+      {
+        "numGroup": 3,
+        "numSeek": 1,
+        "aim": "4-man housing",
+        "dorm": "Gabelli Hall",
+        "image": {
+          "src": "src/gabelli.jpg",
+          "alt": "Gabelli Hall"
+        },
+        "members": [
+          {
+            "name": "John Doe",
+            "academicYear": "Sophomore"
+          },
+          {
+            "name": "Jane Smith",
+            "academicYear": "Junior"
+          },
+          {
+            "name": "Alex Brown",
+            "academicYear": "Freshman"
+          }
+        ]
+      },
+      {
+        "numGroup": 2,
+        "numSeek": 2,
+        "aim": "4-man housing",
+        "dorm": "Vanderslice Hall",
+        "image": {
+          "src": "Vanderslice.jpg",
+          "alt": "Vanderslice Hall"
+        },
+        "members": [
+          {
+            "name": "Sara Lee",
+            "academicYear": "Senior"
+          },
+          {
+            "name": "Tom Green",
+            "academicYear": "Junior"
+          }
+        ]
+      }
+    ]
+  }
+  
