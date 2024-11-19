@@ -90,7 +90,7 @@
       "aim": "4-man housing",
       "dorm": "Thomas More Apartments",
       "image": {
-        "src": "assets/thomasmore.jpg",
+        "src": "assets/thomas-more.jpg",
         "alt": "Thomas More Apartments"
       },
       "members": [
@@ -174,7 +174,7 @@
       "aim": "8-man housing",
       "dorm": "Ninety St. Thomas More",
       "image": {
-        "src": "assets/ninety-st-thomas.jpg",
+        "src": "assets/ninety-st-thomas-more.jpg",
         "alt": "Ninety St. Thomas More"
       },
       "members": [
