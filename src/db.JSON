@@ -1,49 +1,796 @@
 {
-    "on-campus": [
-      {
-        "numGroup": 3,
-        "numSeek": 1,
-        "aim": "4-man housing",
-        "dorm": "Gabelli Hall",
-        "image": {
-          "src": "src/gabelli.jpg",
-          "alt": "Gabelli Hall"
-        },
-        "members": [
-          {
-            "name": "John Doe",
-            "academicYear": "Sophomore"
-          },
-          {
-            "name": "Jane Smith",
-            "academicYear": "Junior"
-          },
-          {
-            "name": "Alex Brown",
-            "academicYear": "Freshman"
-          }
-        ]
+  "on-campus": [
+    {
+      "numGroup": 4,
+      "numSeek": 2,
+      "aim": "6-man housing",
+      "dorm": "Ignacio Hall",
+      "image": {
+        "src": "assets/ignacio.jpg",
+        "alt": "Ignacio Hall"
       },
-      {
-        "numGroup": 2,
-        "numSeek": 2,
-        "aim": "4-man housing",
-        "dorm": "Vanderslice Hall",
-        "image": {
-          "src": "Vanderslice.jpg",
-          "alt": "Vanderslice Hall"
+      "members": [
+        {
+          "name": "Alice Kim",
+          "academicYear": "Junior"
         },
-        "members": [
-          {
-            "name": "Sara Lee",
-            "academicYear": "Senior"
-          },
-          {
-            "name": "Tom Green",
-            "academicYear": "Junior"
-          }
-        ]
-      }
-    ]
-  }
+        {
+          "name": "Ethan Hall",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Grace Wu",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Omar Ali",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 1,
+      "aim": "4-man housing",
+      "dorm": "Reservoir Apartments",
+      "image": {
+        "src": "assets/reservoir.jpg",
+        "alt": "Reservoir Apartments"
+      },
+      "members": [
+        {
+          "name": "Emma Stone",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "Liam Gray",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Noah King",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 5,
+      "numSeek": 1,
+      "aim": "6-man housing",
+      "dorm": "Rubenstein Hall",
+      "image": {
+        "src": "assets/rubenstein.jpg",
+        "alt": "Rubenstein Hall"
+      },
+      "members": [
+        {
+          "name": "Isabella Garcia",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "James Robinson",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Sophia Walker",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Evan Perez",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Natalie Moore",
+          "academicYear": "Freshman"
+        }
+      ]
+    },
+    {
+      "numGroup": 2,
+      "numSeek": 2,
+      "aim": "4-man housing",
+      "dorm": "Thomas More Apartments",
+      "image": {
+        "src": "assets/thomasmore.jpg",
+        "alt": "Thomas More Apartments"
+      },
+      "members": [
+        {
+          "name": "Chloe Lee",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Mason Taylor",
+          "academicYear": "Senior"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 3,
+      "aim": "6-man housing",
+      "dorm": "Stayer Hall",
+      "image": {
+        "src": "assets/stayer.jpg",
+        "alt": "Stayer Hall"
+      },
+      "members": [
+        {
+          "name": "Sofia Wilson",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Michael Martinez",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Ava Thomas",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 7,
+      "numSeek": 1,
+      "aim": "8-man housing",
+      "dorm": "Walsh Hall",
+      "image": {
+        "src": "assets/walsh.jpg",
+        "alt": "Walsh Hall"
+      },
+      "members": [
+        {
+          "name": "Lucas Hernandez",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "Ella Davis",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Mila Adams",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Daniel White",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Leo Wright",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Emily Green",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Logan Baker",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 6,
+      "numSeek": 2,
+      "aim": "8-man housing",
+      "dorm": "Ninety St. Thomas More",
+      "image": {
+        "src": "assets/ninety-st-thomas.jpg",
+        "alt": "Ninety St. Thomas More"
+      },
+      "members": [
+        {
+          "name": "Zoe Lewis",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Oliver Scott",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "Avery Jackson",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Benjamin Hill",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Madison Walker",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Jack Allen",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 2,
+      "aim": "5-man housing",
+      "dorm": "Modulars",
+      "image": {
+        "src": "assets/modulars.jpg",
+        "alt": "Modulars"
+      },
+      "members": [
+        {
+          "name": "Scarlett Young",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "David Rodriguez",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Elena Carter",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 6,
+      "numSeek": 1,
+      "aim": "7-man housing",
+      "dorm": "Vanderslice Hall",
+      "image": {
+        "src": "assets/vanderslice.jpg",
+        "alt": "Vanderslice Hall"
+      },
+      "members": [
+        {
+          "name": "Gabriel Anderson",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Victoria Thompson",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Aiden Harris",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Maya Martin",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "Elijah Evans",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Aria Gonzalez",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 4,
+      "numSeek": 4,
+      "aim": "8-man housing",
+      "dorm": "Walsh Hall",
+      "image": {
+        "src": "assets/walsh.jpg",
+        "alt": "Walsh Hall"
+      },
+      "members": [
+        {
+          "name": "Isaac Perez",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "Lily Edwards",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Luke Jenkins",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Riley Collins",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 1,
+      "aim": "4-man housing",
+      "dorm": "Voute Hall",
+      "image": {
+        "src": "assets/voute.jpg",
+        "alt": "Voute Hall"
+      },
+      "members": [
+        {
+          "name": "Samantha Roberts",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Andrew Howard",
+          "academicYear": "Freshman"
+        },
+        {
+          "name": "Natalie Lopez",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 1,
+      "aim": "4-man housing",
+      "dorm": "Gabelli Hall",
+      "image": {
+      "src": "assets/gabelli.jpg",
+      "alt": "Gabelli Hall"
+      },
+      "members": [
+        {
+          "name": "John Deane",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Jane Smith",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Alex Brown",
+          "academicYear": "Freshman"
+        }
+      ]
+    },
+    {
+      "numGroup": 2,
+      "numSeek": 2,
+      "aim": "4-man housing",
+      "dorm": "Vanderslice Hall",
+      "image": {
+      "src": "assets/vanderslice.jpg",
+      "alt": "Vanderslice Hall"
+      },
+      "members": [
+        {
+          "name": "Sara Lee",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Tom Green",
+          "academicYear": "Junior"
+        }
+      ]
+    }
+  ],
   
+  "off-campus": [
+    {
+      "numGroup": 3,
+      "numSeek": 2,
+      "period": {
+        "start": {"month": 3, "day": 1, "year": 2025},
+        "end": {"month": 6, "day": 30, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Chris Lee",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Ella Brown",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Daniel Green",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 2,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 2, "day": 15, "year": 2025},
+        "end": {"month": 6, "day": 30, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Rachel Smith",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Max Taylor",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 4,
+      "numSeek": 3,
+      "period": {
+        "start": {"month": 5, "day": 1, "year": 2025},
+        "end": {"month": 8, "day": 31, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Mia Clark",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Jake Hill",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Lily Morgan",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Ethan Harris",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 5,
+      "numSeek": 2,
+      "period": {
+        "start": {"month": 3, "day": 20, "year": 2025},
+        "end": {"month": 7, "day": 31, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Sarah Carter",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Dylan Johnson",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Olivia Parker",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Liam Roberts",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Grace Evans",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 1,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 4, "day": 1, "year": 2025},
+        "end": {"month": 7, "day": 20, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Henry Adams",
+          "academicYear": "Senior"
+        }
+      ]
+    },
+    {
+      "numGroup": 6,
+      "numSeek": 3,
+      "period": {
+        "start": {"month": 5, "day": 10, "year": 2025},
+        "end": {"month": 9, "day": 10, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Isabel Murphy",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Ava Sanders",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Lucas Hall",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Victoria Kim",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Zach Brown",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Julia Torres",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 6, "day": 1, "year": 2025},
+        "end": {"month": 9, "day": 30, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Brian Thompson",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Emma Cooper",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Alex Jones",
+          "academicYear": "Senior"
+        }
+      ]
+    },
+    {
+      "numGroup": 4,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 2, "day": 1, "year": 2025},
+        "end": {"month": 5, "day": 31, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Sophie Diaz",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Logan Campbell",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Jade Griffin",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Brandon Hall",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 5,
+      "numSeek": 4,
+      "period": {
+        "start": {"month": 1, "day": 15, "year": 2025},
+        "end": {"month": 5, "day": 15, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Grace Allen",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Liam Foster",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Jenna Morris",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Oliver Brooks",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Nora King",
+          "academicYear": "Senior"
+        }
+      ]
+    },
+    {
+      "numGroup": 2,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 3, "day": 20, "year": 2025},
+        "end": {"month": 7, "day": 30, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Nathan Baker",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Samantha Evans",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 4,
+      "numSeek": 4,
+      "period": {
+        "start": {"month": 2, "day": 10, "year": 2025},
+        "end": {"month": 6, "day": 15, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Ella Gray",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Harper Young",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Miles West",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Olivia King",
+          "academicYear": "Sophomore"
+        }
+      ]
+    },
+    {
+      "numGroup": 6,
+      "numSeek": 2,
+      "period": {
+        "start": {"month": 4, "day": 15, "year": 2025},
+        "end": {"month": 8, "day": 31, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Lily Harris",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Zoe Wood",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Emma Reed",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Elijah Turner",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Noah Brooks",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Stella Miller",
+          "academicYear": "Senior"
+        }
+      ]
+    },
+    {
+      "numGroup": 3,
+      "numSeek": 3,
+      "period": {
+        "start": {"month": 5, "day": 1, "year": 2025},
+        "end": {"month": 9, "day": 1, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Hannah Barnes",
+          "academicYear": "Junior"
+        },
+        {
+          "name": "Jack Turner",
+          "academicYear": "Sophomore"
+        },
+        {
+          "name": "Mason Diaz",
+          "academicYear": "Senior"
+        }
+      ]
+    },
+    {
+      "numGroup": 2,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 6, "day": 10, "year": 2025},
+        "end": {"month": 10, "day": 1, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Henry Garcia",
+          "academicYear": "Senior"
+        },
+        {
+          "name": "Sophie Williams",
+          "academicYear": "Junior"
+        }
+      ]
+    },
+    {
+      "numGroup": 1,
+      "numSeek": 1,
+      "period": {
+        "start": {"month": 4, "day": 1, "year": 2025},
+        "end": {"month": 7, "day": 20, "year": 2025}
+      },
+      "address": "",
+      "image": {
+        "src": "",
+        "alt": ""
+      },
+      "members": [
+        {
+          "name": "Samuel Smith",
+          "academicYear": "Senior"
+        }
+      ]
+    }
+  ]
+}
