@@ -6,7 +6,7 @@
       "aim": "6-man housing",
       "dorm": "Ignacio Hall",
       "image": {
-        "src": "assets/ignacio.jpg",
+        "src": "assets/on-campus/ignacio.jpg",
         "alt": "Ignacio Hall"
       },
       "members": [
@@ -34,7 +34,7 @@
       "aim": "4-man housing",
       "dorm": "Reservoir Apartments",
       "image": {
-        "src": "assets/reservoir.jpg",
+        "src": "assets/on-campus/reservoir.jpg",
         "alt": "Reservoir Apartments"
       },
       "members": [
@@ -58,7 +58,7 @@
       "aim": "6-man housing",
       "dorm": "Rubenstein Hall",
       "image": {
-        "src": "assets/rubenstein.jpg",
+        "src": "assets/on-campus/rubenstein.jpg",
         "alt": "Rubenstein Hall"
       },
       "members": [
@@ -90,7 +90,7 @@
       "aim": "4-man housing",
       "dorm": "Thomas More Apartments",
       "image": {
-        "src": "assets/thomas-more.jpg",
+        "src": "assets/on-campus/thomas-more.jpg",
         "alt": "Thomas More Apartments"
       },
       "members": [
@@ -110,7 +110,7 @@
       "aim": "6-man housing",
       "dorm": "Stayer Hall",
       "image": {
-        "src": "assets/stayer.jpg",
+        "src": "assets/on-campus/stayer.jpg",
         "alt": "Stayer Hall"
       },
       "members": [
@@ -134,7 +134,7 @@
       "aim": "8-man housing",
       "dorm": "Walsh Hall",
       "image": {
-        "src": "assets/walsh.jpg",
+        "src": "assets/on-campus/walsh.jpg",
         "alt": "Walsh Hall"
       },
       "members": [
@@ -174,7 +174,7 @@
       "aim": "8-man housing",
       "dorm": "Ninety St. Thomas More",
       "image": {
-        "src": "assets/ninety-st-thomas-more.jpg",
+        "src": "assets/on-campus/ninety-st-thomas-more.jpg",
         "alt": "Ninety St. Thomas More"
       },
       "members": [
@@ -210,7 +210,7 @@
       "aim": "5-man housing",
       "dorm": "Modulars",
       "image": {
-        "src": "assets/modulars.jpg",
+        "src": "assets/on-campus/modulars.jpg",
         "alt": "Modulars"
       },
       "members": [
@@ -234,7 +234,7 @@
       "aim": "7-man housing",
       "dorm": "Vanderslice Hall",
       "image": {
-        "src": "assets/vanderslice.jpg",
+        "src": "assets/on-campus/vanderslice.jpg",
         "alt": "Vanderslice Hall"
       },
       "members": [
@@ -270,7 +270,7 @@
       "aim": "8-man housing",
       "dorm": "Walsh Hall",
       "image": {
-        "src": "assets/walsh.jpg",
+        "src": "assets/on-campus/walsh.jpg",
         "alt": "Walsh Hall"
       },
       "members": [
@@ -298,7 +298,7 @@
       "aim": "4-man housing",
       "dorm": "Voute Hall",
       "image": {
-        "src": "assets/voute.jpg",
+        "src": "assets/on-campus/voute.jpg",
         "alt": "Voute Hall"
       },
       "members": [
@@ -322,7 +322,7 @@
       "aim": "4-man housing",
       "dorm": "Gabelli Hall",
       "image": {
-      "src": "assets/gabelli.jpg",
+      "src": "assets/on-campus/gabelli.jpg",
       "alt": "Gabelli Hall"
       },
       "members": [
@@ -346,7 +346,7 @@
       "aim": "4-man housing",
       "dorm": "Vanderslice Hall",
       "image": {
-      "src": "assets/vanderslice.jpg",
+      "src": "assets/on-campus/vanderslice.jpg",
       "alt": "Vanderslice Hall"
       },
       "members": [
@@ -366,14 +366,16 @@
     {
       "numGroup": 3,
       "numSeek": 2,
+      "rent": 1000,
+      "utilities": "Included",
       "period": {
         "start": {"month": 3, "day": 1, "year": 2025},
         "end": {"month": 6, "day": 30, "year": 2025}
       },
-      "address": "",
+      "address": "36 Crosby Road, Newton, MA 02467",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/36 Crosby Rd.png",
+        "alt": "36 Crosby Rd"
       },
       "members": [
         {
@@ -393,14 +395,16 @@
     {
       "numGroup": 2,
       "numSeek": 1,
+      "rent": 1200,
+      "utilities": "Included",
       "period": {
         "start": {"month": 2, "day": 15, "year": 2025},
         "end": {"month": 6, "day": 30, "year": 2025}
       },
-      "address": "",
+      "address": "2035 Commonwealth Avenue 6, Boston, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/2035 Commonwealth Ave.png",
+        "alt": "2035 Commonwealth Ave"
       },
       "members": [
         {
@@ -416,14 +420,16 @@
     {
       "numGroup": 4,
       "numSeek": 3,
+      "rent": 1100,
+      "utilities": "Not Included",
       "period": {
         "start": {"month": 5, "day": 1, "year": 2025},
         "end": {"month": 8, "day": 31, "year": 2025}
       },
-      "address": "",
+      "address": "2021 Commonwealth Avenue, Boston, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/2021 Commonwealth Ave.png",
+        "alt": "2021 Commonwealth Ave"
       },
       "members": [
         {
@@ -447,14 +453,16 @@
     {
       "numGroup": 5,
       "numSeek": 2,
+      "rent": 800,
+      "utilities": "Included",
       "period": {
         "start": {"month": 3, "day": 20, "year": 2025},
         "end": {"month": 7, "day": 31, "year": 2025}
       },
-      "address": "",
+      "address": "38 Kirkwood Road, Boston, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/38 Kirkwood Rd.png",
+        "alt": "38 Kirkwood Rd"
       },
       "members": [
         {
@@ -482,14 +490,16 @@
     {
       "numGroup": 1,
       "numSeek": 1,
+      "rent": 1200,
+      "utilities": "Included",
       "period": {
         "start": {"month": 4, "day": 1, "year": 2025},
         "end": {"month": 7, "day": 20, "year": 2025}
       },
-      "address": "",
+      "address": "1335 Boylston Street, Boston, MA 02215",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/1335 Boylston St.jpg",
+        "alt": "1335 Boylston St"
       },
       "members": [
         {
@@ -501,14 +511,16 @@
     {
       "numGroup": 6,
       "numSeek": 3,
+      "rent": 950,
+      "utilities": "Included",
       "period": {
         "start": {"month": 5, "day": 10, "year": 2025},
         "end": {"month": 9, "day": 10, "year": 2025}
       },
-      "address": "",
+      "address": "280 McGrath Highway, Somerville, MA 02143",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/280 McGrath Hwy.png",
+        "alt": "280 McGrath Hwy"
       },
       "members": [
         {
@@ -540,14 +552,16 @@
     {
       "numGroup": 3,
       "numSeek": 1,
+      "rent": 750,
+      "utilities": "Included",
       "period": {
         "start": {"month": 6, "day": 1, "year": 2025},
         "end": {"month": 9, "day": 30, "year": 2025}
       },
-      "address": "",
+      "address": "73 Langley Road, Boston, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/73 Langley Rd.png",
+        "alt": "73 Langley Rd"
       },
       "members": [
         {
@@ -567,14 +581,16 @@
     {
       "numGroup": 4,
       "numSeek": 1,
+      "rent": 1000,
+      "utilities": "Included",
       "period": {
         "start": {"month": 2, "day": 1, "year": 2025},
         "end": {"month": 5, "day": 31, "year": 2025}
       },
-      "address": "",
+      "address": "47 Orkney Road #2, Boston, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/47 Orkney Rd.png",
+        "alt": "47 Orkney Rd"
       },
       "members": [
         {
@@ -598,14 +614,16 @@
     {
       "numGroup": 5,
       "numSeek": 4,
+      "rent": 800,
+      "utilities": "Not Included",
       "period": {
         "start": {"month": 1, "day": 15, "year": 2025},
         "end": {"month": 5, "day": 15, "year": 2025}
       },
-      "address": "",
+      "address": "52 Lane Park, Boston, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/52 Lane Park.png",
+        "alt": "52 Lane Park"
       },
       "members": [
         {
@@ -633,14 +651,16 @@
     {
       "numGroup": 2,
       "numSeek": 1,
+      "rent": 1300,
+      "utilities": "Included",
       "period": {
         "start": {"month": 3, "day": 20, "year": 2025},
         "end": {"month": 7, "day": 30, "year": 2025}
       },
-      "address": "",
+      "address": "221 Massachusetts Ave, Boston, MA 02115",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/221 Massachusetts Ave.jpg",
+        "alt": "221 Massachusetts Ave"
       },
       "members": [
         {
@@ -656,14 +676,16 @@
     {
       "numGroup": 4,
       "numSeek": 4,
+      "rent": 1100,
+      "utilities": "Not Included",
       "period": {
         "start": {"month": 2, "day": 10, "year": 2025},
         "end": {"month": 6, "day": 15, "year": 2025}
       },
-      "address": "",
+      "address": "240 Foster St, Brighton, MA 02135",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/240 Foster St.png",
+        "alt": "240 Foster St"
       },
       "members": [
         {
@@ -687,14 +709,16 @@
     {
       "numGroup": 6,
       "numSeek": 2,
+      "rent": 900,
+      "utilities": "Included",
       "period": {
         "start": {"month": 4, "day": 15, "year": 2025},
         "end": {"month": 8, "day": 31, "year": 2025}
       },
-      "address": "",
+      "address": "28 Manet Road, Newton, MA 02467",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/28 Manet Rd.png",
+        "alt": "28 Manet Rd"
       },
       "members": [
         {
@@ -726,14 +750,16 @@
     {
       "numGroup": 3,
       "numSeek": 3,
+      "rent": 750,
+      "utilities": "Included",
       "period": {
         "start": {"month": 5, "day": 1, "year": 2025},
         "end": {"month": 9, "day": 1, "year": 2025}
       },
-      "address": "",
+      "address": "97 University Road, Brookline, MA 02445",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/97 University Rd.png",
+        "alt": "97 University Rd"
       },
       "members": [
         {
@@ -753,14 +779,16 @@
     {
       "numGroup": 2,
       "numSeek": 1,
+      "rent": 1000,
+      "utilities": "Included",
       "period": {
         "start": {"month": 6, "day": 10, "year": 2025},
         "end": {"month": 10, "day": 1, "year": 2025}
       },
-      "address": "",
+      "address": "219 Western Ave, Allston, MA 02134",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/219 Western Ave.jpg",
+        "alt": "219 Western Ave"
       },
       "members": [
         {
@@ -776,14 +804,16 @@
     {
       "numGroup": 1,
       "numSeek": 1,
+      "rent": 1300,
+      "utilities": "Not Included",
       "period": {
         "start": {"month": 4, "day": 1, "year": 2025},
         "end": {"month": 7, "day": 20, "year": 2025}
       },
-      "address": "",
+      "address": "1047 Commonwealth Ave",
       "image": {
-        "src": "",
-        "alt": ""
+        "src": "assets/off-campus/1047 Commonwealth Ave.png",
+        "alt": "1047 Commonwealth Ave"
       },
       "members": [
         {
