@@ -1,109 +1,282 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Boston College Roommate Search</title>
-        <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/30870c0125.js" crossorigin="anonymous"></script>
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <!-- Varun -->
-        <header>
-            <div id="nav">
-
+  <head>
+    <title>Boston College Roommate Search</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/30870c0125.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Varun -->
+    <header>
+      <div id="nav">
+        <nav>
+          <h2 class="BCRS-Logo">
+            <a href = "#gassonHall"><span class="gold Logo">BC</span><span class="white Logo">RS</span></a>
+          </h2>
+          <p><a href="#gassonHall">Home</a></p>
+          <p><a href="#on-campus">Listings</a></p>
+          <p>
+            <a
+              href="https://www.bc.edu/bc-web/offices/studentaffairs/sites/residential-life/living-in-bc-housing/hall-openings-closings.html"
+              >BC Housing Calendar
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.bc.edu/bc-web/offices/studentaffairs/sites/residential-life/living-in-bc-housing.html"
+              >Resources
+            </a>
+          </p>
+          <p><a href="#post">Contact</a></p>
+        </nav>
+      </div>
+    </header>
+    <div id="landing-splash">
+      <div class="search-bar">
+        <main class="homepage">
+          <div id="gassonHall" class="image" aria-label="Image of Gasson Hall">
+            <img
+              src="https://cdn.glitch.global/da9cfe19-f6cb-435e-ae30-d04e66913eee/gassonHall.jpg?v=1731984555342"
+              alt="Image of Gasson Hall"
+            />
+            <div class="buttons">
+              <button onclick = "document.location='#on-campus'" class="on-campus location">
+                <img
+                  src="https://cdn.glitch.global/da9cfe19-f6cb-435e-ae30-d04e66913eee/Vector.png?v=1731997394045"
+                  alt="lodging clipart"
+                />
+                <p>On-Campus</p>
+              </button>
+              <button onclick = "document.location='#off-campus'" class="off-campus location">
+                <img
+                  src="https://cdn.glitch.global/da9cfe19-f6cb-435e-ae30-d04e66913eee/VectorWhite.png?v=1732117853774"
+                  alt="lodging clipart"
+                />
+                <p>Off-Campus</p>
+              </button>
             </div>
-        </header>
-        <div id="landing-splash">
-            <div class="search-bar">
-                
+          </div>
+          <section class="splash">
+            <div class="searchBar wrapper">
+              <div>
+                <form
+                  method="post"
+                  action="http://www.randyconnolly.com/tests/process.php"
+                >
+                  <fieldset>
+                    <div class="label-select">
+                      <label class="label">Class Year:</label>
+                      <select
+                        name="Class Year:"
+                        placeholder="Enter Year"
+                        id="class-year"
+                        class="select"
+                      >
+                        <optgroup class="options-group">
+                          <option>2025</option>
+                          <option>2026</option>
+                          <option>2027</option>
+                          <option>2028</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class="label-select">
+                      <label class="label">Size of Group:</label>
+                      <select
+                        name="Size of Group:"
+                        placeholder="Enter Group Size"
+                        id="size-of-group"
+                        class="select"
+                      >
+                        <optgroup class="options-group">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class="label-select">
+                      <label class="label">Desired Number of Roomates:</label>
+                      <select
+                        name="Desired Number of Roomates:"
+                        placeholder="Enter Number of Roomates You're Looking For"
+                        id="desired-number-of-roommates"
+                        class="select"
+                      >
+                        <optgroup class="options-group">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <div class="label-select">
+                      <label class="label">Preferred Dorm:</label>
+                      <select
+                        name="Preferred Dorm:"
+                        placeholder="Enter Preferred Dorm"
+                        id="preferred-dorm"
+                        class="select"
+                      >
+                        <optgroup class="options-group">
+                          <option>Ninety St. Thomas More</option>
+                          <option>Vanderslice Hall</option>
+                          <option>Walsh Hall</option>
+                          <option>2150 St. Thomas More</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                    <button type="submit" class="search">
+                      <img
+                        src="https://cdn.glitch.global/da9cfe19-f6cb-435e-ae30-d04e66913eee/MagnifyingGlass.png?v=1732079795736"
+                        alt="magnifying glass"
+                      />
+                      <p>Search</p>
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
             </div>
-        </div>
+          </section>
+        </main>
+      </div>
+    </div>
 
-        <!-- Andy -->
-        <div id="on-campus">
+    <!-- Andy -->
+    <div id="on-campus"></div>
+    <div id="off-campus"></div>
 
-        </div>
-        <div id="off-campus">
+    <!-- Lucas -->
+    <div id="about"></div>
 
-        </div>
+    <!-- Harim -->
+    <div id="post">
+      <div class="container">
+        <!-- Use form so we can later implement form handler -->
+        <h2 class="section-title">
+          <span class="keyword">Post</span> Your Own Listing
+        </h2>
+        <form class="post-form">
+          <div class="form-location">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+              <option value="off-campus">Off-Campus</option>
+              <option value="on-campus">On-Campus</option>
+            </select>
+          </div>
 
-        <!-- Lucas -->
-        <div id="about">
+          <div class="form-name">
+            <label for="name">Current Group Members:</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="ex. John Doe, Jane Doe, ..."
+            ></textarea>
+          </div>
 
-        </div>
+          <div class="form-looking-for">
+            <label for="looking-for">Looking for:</label>
+            <input
+              type="number"
+              id="looking-for"
+              name="looking-for"
+              min="1"
+              placeholder="ex. 8"
+            />
+          </div>
 
-        <!-- Harim -->
-        <div id="post">
-            <div class="container">
-            <!-- Use form so we can later implement form handler -->
-            <h2 class="section-title"><span class="keyword">Post</span> Your Own Listing</h2>
-            <form class="post-form">
-                <div class="form-location">
-                    <label for="location">Location:</label>
-                    <select id="location" name="location">
-                        <option value="off-campus">Off-Campus</option>
-                        <option value="on-campus">On-Campus</option>
-                    </select>
-                </div>
-                
-                <div class="form-name">
-                    <label for="name">Current Group Members:</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="ex. John Doe, Jane Doe, ..."></textarea>
-                </div>
+          <div class="form-date">
+            <label for="date-range">Date:</label>
+            <input
+              type="text"
+              id="date-range"
+              name="date-range"
+              placeholder="ex. Jun 28th, 2025 ~ Aug 1st, 2025"
+            />
+            <button type="button" class="calendar-button">📅</button>
+          </div>
 
-                <div class="form-looking-for">
-                    <label for="looking-for">Looking for:</label>
-                    <input type="number" id="looking-for" name="looking-for" min="1" placeholder="ex. 8">
-                </div>
-        
-                <div class="form-date">
-                    <label for="date-range">Date:</label>
-                    <input type="text" id="date-range" name="date-range" placeholder="ex. Jun 28th, 2025 ~ Aug 1st, 2025">
-                    <button type="button" class="calendar-button">📅</button>
-                </div>
-        
-                <div class="form-gender">
-                    <label for="gender">Gender:</label>
-                    <select id="gender" name="gender">
-                        <option value="men">Men</option>
-                        <option value="women">Women</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
+          <div class="form-gender">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="men">Men</option>
+              <option value="women">Women</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
-                <div class="form-dorm">
-                    <label for="dorm">Preferred-Dorm:</label>
-                    <input type="text" id="dorm" name="dorm" placeholder="ex. Gabelli">
-                </div>
+          <div class="form-dorm">
+            <label for="dorm">Preferred-Dorm:</label>
+            <input
+              type="text"
+              id="dorm"
+              name="dorm"
+              placeholder="ex. Gabelli"
+            />
+          </div>
 
-                <div class="form-address">
-                    <label for="address">Address:</label>
-                    <input type="text" id="address" name="address" placeholder="ex. 140 Commonwealth Ave, Chestnut Hill, MA 02467">
-                </div>
+          <div class="form-address">
+            <label for="address">Address:</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="ex. 140 Commonwealth Ave, Chestnut Hill, MA 02467"
+            />
+          </div>
 
-                <div class="form-additional">
-                    <label for="notes">Additional Information:</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="Additional Information"></textarea>
-                </div>
-        
-                <div class="form-image">
-                    <label for="upload-images">Upload Images:</label>
-                    <input type="file" id="upload-images" name="upload-images" multiple>
-                </div>
-        
-                <div>
-                    <button type="submit" class="submit-button">Submit</button>
-                </div>
-            </form>
-            </div>
-        </div>
-        <footer>
-            <p>&copy; 2024 Boston College Roommate Search. All rights reserved.</p>
-        </footer>
-    </body>
+          <div class="form-additional">
+            <label for="notes">Additional Information:</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Additional Information"
+            ></textarea>
+          </div>
+
+          <div class="form-image">
+            <label for="upload-images">Upload Images:</label>
+            <input
+              type="file"
+              id="upload-images"
+              name="upload-images"
+              multiple
+            />
+          </div>
+
+          <div>
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Boston College Roommate Search. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
