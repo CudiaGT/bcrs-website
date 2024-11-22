@@ -11,7 +11,14 @@ export default function renderPosts(data) {
     const leftArrowOn = document.querySelector("#onCampusLeftArrow");
     leftArrowOn.addEventListener("click", () => {
         if (onCampusPostCounter === 0) {
-            onCampusPostCounter = data.oncampus.length - 1;
+            if (data.oncampus.length % 2 === 0) {
+                console.log(onCampusPostCounter);
+                onCampusPostCounter = data.oncampus.length - 2;
+                console.log(onCampusPostCounter);
+            }
+            else {
+                onCampusPostCounter = data.oncampus.length - 1;
+            }
         }
         else {
             onCampusPostCounter-=2;
@@ -26,7 +33,7 @@ export default function renderPosts(data) {
     })
     const rightArrowOn = document.querySelector("#onCampusRightArrow");
     rightArrowOn.addEventListener("click", () => {
-        if (onCampusPostCounter === data.oncampus.length - 1) {
+        if (onCampusPostCounter === data.oncampus.length - 1 || onCampusPostCounter === data.oncampus.length - 2) {
             onCampusPostCounter = 0;
         }
         else {
@@ -47,7 +54,12 @@ export default function renderPosts(data) {
     const leftArrowOff = document.querySelector("#offCampusLeftArrow");
     leftArrowOff.addEventListener("click", () => {
         if (offCampusPostCounter === 0) {
-            offCampusPostCounter = data.offcampus.length - 1;
+            if (data.offcampus.length % 2 === 0) {
+                offCampusPostCounter = data.offcampus.length - 2;
+            }
+            else {
+                offCampusPostCounter = data.offcampus.length - 1;
+            }
         }
         else {
             offCampusPostCounter-=2;
@@ -62,7 +74,7 @@ export default function renderPosts(data) {
     })
     const rightArrowOff = document.querySelector("#offCampusRightArrow");
     rightArrowOff.addEventListener("click", () => {
-        if (offCampusPostCounter === data.offcampus.length - 1) {
+        if (offCampusPostCounter === data.offcampus.length - 1 || offCampusPostCounter === data.offcampus.length - 2) {
             offCampusPostCounter = 0;
         }
         else {
