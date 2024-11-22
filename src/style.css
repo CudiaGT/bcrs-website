@@ -112,13 +112,246 @@ textarea:focus {
     display: inline;
 }
 
+body.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .image-container img {
+    width: 100vw;
+    z-index: -1;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    color: white;
+    text-align: center;
+  }
+  
+  p.imgResTop {
+    display: flex;
+    font-size: 4rem;
+    font-weight: 900;
+    /*   background: rgba(136, 0, 21, 0.6);
+    padding: 10px;
+    border-radius: 25px; */
+  }
+  
+  p.imgResBottom {
+    margin-top: 10%;
+    width: 70%; /* Set width to 50% of its parent container */
+    height: 200px;
+    text-align: left;
+    text-indent: 30px;
+    color: white;
+    width: 70vw;
+  }
+  
+  .gold {
+    width: 100vw;
+    height: 30px;
+    background-color: #cd9f58;
+  }
+  
+  div.maroon {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 550px;
+    background-color: #852221;
+  }
+  
+  div.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 930px;
+    background-color: #cd9f58;
+  }
+  
+  .image-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  div.services img {
+    width: 100vw;
+  }
+  
+  div.image-container2 .section-title-about {
+    position: absolute;
+    text-align: center;
+  }
+  
+  div.problems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  div.problems .services {
+    margin-top: 10%;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: #852221;
+  }
+  
+  .section-title-about {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+  }
+  
+  .servicesExplanation {
+    margin-top: 10%;
+    text-align: left;
+    text-indent: 30px;
+    color: white;
+    width: 80vw;
+  }
+  
+  .mission {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .mission img {
+    width: 100vw;
+  }
+  
+  .mission p {
+    position: absolute;
+  }
+  
+  .statement {
+    display: flex;
+    background-color: #852221;
+    width: 100vw;
+    justify-content: center;
+  }
+  .statement p{
+    color: white;
+    width: 80vw;
+    text-align: center;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #cd9f58;
+  }
+  
+  .teamMember {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .team img{
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  .teamMember a{
+    color: white;
+     text-decoration: none;
+  }
+  
+  
+  
+  footer {
+    background-color: #121212; /* Dark background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Adjust as needed */
+  }
+  
+  .footer-quote {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  
+  .footer-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 20px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    display: inline-block;
+  }
+  
+  .footer-column p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    margin: 5px 0;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footer-bottom {
+    font-size: 0.8rem;
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  
+  
+/* 
+
 footer {
     background-color: #501315;
     padding: 2rem 0;
     color: #ffffff;
     font-size: 1rem; 
     text-align: center;
-}
+} */
 
 
 /* CSS for medium viewport (might not use) */
