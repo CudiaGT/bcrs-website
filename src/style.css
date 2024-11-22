@@ -1,65 +1,270 @@
 /* Let's do mobile first and then do desktop (potentially a medium viewport if we have time) */
 * {
     font-family: "Lexend", sans-serif;
-}
-
-.section-title {
+  }
+  
+  nav {
+    display: flex;
+    border: solid 3px #852221;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: #852221;
+  }
+  
+  h2.BCRS-Logo {
+    font-family: "Arial", sans-serif;
+    padding-top: 1%;
+    flex-basis: 10%;
+    margin: 2%;
+    font-size: 2.5em;
+  }
+  
+  nav span.gold {
+    color: #cd9f58;
+  }
+  
+  nav span.white {
+    color: #ffffff;
+  }
+  
+  nav p {
+    /*display: inline;*/
+    padding: 2% 2%;
+    flex-grow: 1;
+    color: white;
+    text-align: center;
+    /*border: solid 2px orange;*/
+    flex-basis: auto;
+    margin: 2%;
+  
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+  }
+  
+  h2 a {
+    text-decoration: none;
+  }
+  
+  nav p a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  a:hover {
+    color: #cd9f58;
+  }
+  
+  #gassonHall {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+  
+  main.homepage {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button.on-campus {
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: space-between;
+    align-items: center;
+  
+    flex-wrap: nowrap;
+  
+    background-color: #d9d9d9;
+  
+    font-size: 1rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    color: #000000;
+  
+    padding: 0.75rem 1.5rem;
+  
+    border: none;
+  
+    cursor: pointer;
+  }
+  
+  button.off-campus {
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: space-between;
+    align-items: center;
+  
+    flex-wrap: nowrap;
+  
+    background-color: #231f20;
+  
+    font-size: 1rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+  
+    padding: 0.75rem 1.5rem;
+  
+    border: none;
+  
+    cursor: pointer;
+  }
+  
+  button.location {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px white;
+  }
+  
+  div.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .section-title {
     font-size: 2.5rem;
     font-weight: 200;
     text-align: center;
     margin-bottom: 2rem;
-}
-
-.keyword {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #101820;
-}
-
-#post {
-    background-color: #f8fafc;
-    color: #101820;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 2rem 1rem;
-    width: 100%;
-    height: auto; 
-}
-
-#post .container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-form div {
-    margin-bottom: 1.5rem;
+  }
+  
+  section.splash {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-}
-
-#post input, 
-#post select, 
-#post textarea {
+    flex-basis: 50%;
+  }
+  
+  button img {
+    padding-top: 4%;
+  }
+  
+  div.searchBar button.search {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    background-color: #231f20;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  
+    /*width: 20%;*/
+  }
+  
+  div.searchBar fieldset select {
     font-size: 1rem;
     padding: 0.75rem 1rem;
     border: 1px solid #e2e8f0;
     border-radius: 25px;
     background: #f8fafc;
-    outline: none; 
+    outline: none;
     transition: border 0.3s ease;
-}
-
-input:focus, 
-select:focus, 
-textarea:focus {
+    cursor: pointer;
+  }
+  
+  div.searchBar .label-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend", sans-serif;
+    /*font-family: monospace;*/
+    font-weight: bold;
+    padding: 1%;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  div.searchBar fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: solid 1px #ffffff;
+  }
+  
+  div.searchBar {
+    display: flex;
+    flex-direction: column;
+  
+    flex-basis: 25%;
+    /*border: solid 3px red;*/
+  }
+  
+  div.searchBar button.search img {
+    padding: 2%;
+    flex-basis: 40%;
+  }
+  
+  div.searchBar button.search p {
+    flex-basis: 60%;
+    color: white;
+    padding: 2%;
+    font-family: "Lexend", sans-serif;
+    /*font-family: monospace;*/
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .keyword {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #101820;
+  }
+  
+  #post {
+    background-color: #f8fafc;
+    color: #101820;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    height: auto;
+  }
+  
+  #post .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  form div {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  #post input,
+  #post select,
+  #post textarea {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 25px;
+    background: #f8fafc;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
     border: 1px solid #101820;
-}
-
-.calendar-button {
+  }
+  
+  .calendar-button {
     display: inline-block;
     font-size: 1rem;
     padding: 0.75rem;
@@ -68,55 +273,55 @@ textarea:focus {
     background: #101820;
     color: #ffffff;
     cursor: pointer;
-}
-
-.submit-button {
+  }
+  
+  .submit-button {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
     background: #000000;
     color: #ffffff;
-    border: none; 
-    border-radius: 25px; 
-    cursor: pointer; 
-}
-
-.submit-button:hover {
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
     background: #000000;
-}
-
-.upload-box {
+  }
+  
+  .upload-box {
     border: 2px dashed #e2e8f0;
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 2rem;
-    text-align: center; 
+    text-align: center;
     color: #6b7280;
-    cursor: pointer; 
+    cursor: pointer;
     transition: border 0.3s ease, color 0.3s ease;
-}
-
-.upload-box:hover {
+  }
+  
+  .upload-box:hover {
     border-color: #101820;
     color: #101820;
-}
-
-.form-gender {
+  }
+  
+  .form-gender {
     display: flex;
     justify-content: space-between;
-}
-
-#post select {
+  }
+  
+  #post select {
     display: inline;
-}
-
-#post i {
+  }
+  
+  #post i {
     display: inline;
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #501315;
     padding: 2rem 0;
     color: #ffffff;
-    font-size: 1rem; 
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -296,3 +501,19 @@ footer {
 /* CSS for large viewport */
 @media only screen and (min-width: 1024px) {
 }
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "HK Grotesk", sans-serif;
+  }
+  
+  /* CSS for medium viewport (might not use) */
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  }
+  
+  /* CSS for large viewport */
+  @media only screen and (min-width: 1024px) {
+  }
+  
