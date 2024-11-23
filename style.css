@@ -234,7 +234,7 @@
   
   #post .container {
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
     padding: 1rem;
   }
@@ -369,7 +369,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 550px;
+    height: 700px;
     background-color: #852221;
   }
   
@@ -379,7 +379,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    height: 930px;
+    height: 1100px;
     background-color: #cd9f58;
   }
   
@@ -453,6 +453,7 @@
     width: 100vw;
     justify-content: center;
   }
+
   .statement p{
     color: white;
     width: 80vw;
