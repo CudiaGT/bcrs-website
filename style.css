@@ -6,10 +6,11 @@
   nav {
     display: flex;
     border: solid 3px #852221;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
     background-color: #852221;
+    align-items: center;
   }
   
   h2.BCRS-Logo {
@@ -369,7 +370,7 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 700px;
+    height: 650px;
     background-color: #852221;
   }
   
@@ -379,7 +380,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    height: 1100px;
+    height: 1050px;
     background-color: #cd9f58;
   }
   
@@ -452,6 +453,7 @@
     background-color: #852221;
     width: 100vw;
     justify-content: center;
+    padding: 30px 0px;
   }
 
   .statement p{
