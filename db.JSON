@@ -1,5 +1,5 @@
 {
-  "on-campus": [
+  "oncampus": [
     {
       "numGroup": 4,
       "numSeek": 2,
@@ -362,7 +362,7 @@
     }
   ],
   
-  "off-campus": [
+  "offcampus": [
     {
       "numGroup": 3,
       "numSeek": 2,
