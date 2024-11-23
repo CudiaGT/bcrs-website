@@ -317,7 +317,7 @@
     display: inline;
 }
 
-body.about {
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -363,7 +363,6 @@ body.about {
   .gold {
     width: 100vw;
     height: 30px;
-    background-color: #cd9f58;
   }
   
   div.maroon {
