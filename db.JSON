@@ -6,7 +6,7 @@
       "aim": "6-man housing",
       "dorm": "Ignacio Hall",
       "image": {
-        "src": "assets/on-campus/ignacio.jpg",
+        "src": "src/assets/on-campus/ignacio.jpg",
         "alt": "Ignacio Hall"
       },
       "members": [
@@ -34,7 +34,7 @@
       "aim": "4-man housing",
       "dorm": "Reservoir Apartments",
       "image": {
-        "src": "assets/on-campus/reservoir.jpg",
+        "src": "src/assets/on-campus/reservoir.jpg",
         "alt": "Reservoir Apartments"
       },
       "members": [
@@ -58,7 +58,7 @@
       "aim": "6-man housing",
       "dorm": "Rubenstein Hall",
       "image": {
-        "src": "assets/on-campus/rubenstein.jpg",
+        "src": "src/assets/on-campus/rubenstein.jpg",
         "alt": "Rubenstein Hall"
       },
       "members": [
@@ -90,7 +90,7 @@
       "aim": "4-man housing",
       "dorm": "Thomas More Apartments",
       "image": {
-        "src": "assets/on-campus/thomas-more.jpg",
+        "src": "src/assets/on-campus/thomas-more.jpg",
         "alt": "Thomas More Apartments"
       },
       "members": [
@@ -110,7 +110,7 @@
       "aim": "6-man housing",
       "dorm": "Stayer Hall",
       "image": {
-        "src": "assets/on-campus/stayer.jpg",
+        "src": "src/assets/on-campus/stayer.jpg",
         "alt": "Stayer Hall"
       },
       "members": [
@@ -134,7 +134,7 @@
       "aim": "8-man housing",
       "dorm": "Walsh Hall",
       "image": {
-        "src": "assets/on-campus/walsh.jpg",
+        "src": "src/assets/on-campus/walsh.jpg",
         "alt": "Walsh Hall"
       },
       "members": [
@@ -174,7 +174,7 @@
       "aim": "8-man housing",
       "dorm": "Ninety St. Thomas More",
       "image": {
-        "src": "assets/on-campus/ninety-st-thomas-more.jpg",
+        "src": "src/assets/on-campus/ninety-st-thomas-more.jpg",
         "alt": "Ninety St. Thomas More"
       },
       "members": [
@@ -210,7 +210,7 @@
       "aim": "5-man housing",
       "dorm": "Modulars",
       "image": {
-        "src": "assets/on-campus/modulars.jpg",
+        "src": "src/assets/on-campus/modulars.jpg",
         "alt": "Modulars"
       },
       "members": [
@@ -234,7 +234,7 @@
       "aim": "7-man housing",
       "dorm": "Vanderslice Hall",
       "image": {
-        "src": "assets/on-campus/vanderslice.jpg",
+        "src": "src/assets/on-campus/vanderslice.jpg",
         "alt": "Vanderslice Hall"
       },
       "members": [
@@ -270,7 +270,7 @@
       "aim": "8-man housing",
       "dorm": "Walsh Hall",
       "image": {
-        "src": "assets/on-campus/walsh.jpg",
+        "src": "src/assets/on-campus/walsh.jpg",
         "alt": "Walsh Hall"
       },
       "members": [
@@ -298,7 +298,7 @@
       "aim": "4-man housing",
       "dorm": "Voute Hall",
       "image": {
-        "src": "assets/on-campus/voute.jpg",
+        "src": "src/assets/on-campus/voute.jpg",
         "alt": "Voute Hall"
       },
       "members": [
@@ -322,7 +322,7 @@
       "aim": "4-man housing",
       "dorm": "Gabelli Hall",
       "image": {
-      "src": "assets/on-campus/gabelli.jpg",
+      "src": "src/assets/on-campus/gabelli.jpg",
       "alt": "Gabelli Hall"
       },
       "members": [
@@ -346,7 +346,7 @@
       "aim": "4-man housing",
       "dorm": "Vanderslice Hall",
       "image": {
-      "src": "assets/on-campus/vanderslice.jpg",
+      "src": "src/assets/on-campus/vanderslice.jpg",
       "alt": "Vanderslice Hall"
       },
       "members": [
@@ -374,7 +374,7 @@
       },
       "address": "36 Crosby Road, Newton, MA 02467",
       "image": {
-        "src": "assets/off-campus/36 Crosby Rd.png",
+        "src": "src/assets/off-campus/36 Crosby Rd.png",
         "alt": "36 Crosby Rd"
       },
       "members": [
@@ -403,7 +403,7 @@
       },
       "address": "2035 Commonwealth Avenue 6, Boston, MA 02135",
       "image": {
-        "src": "assets/off-campus/2035 Commonwealth Ave.png",
+        "src": "src/assets/off-campus/2035 Commonwealth Ave.png",
         "alt": "2035 Commonwealth Ave"
       },
       "members": [
@@ -428,7 +428,7 @@
       },
       "address": "2021 Commonwealth Avenue, Boston, MA 02135",
       "image": {
-        "src": "assets/off-campus/2021 Commonwealth Ave.png",
+        "src": "src/assets/off-campus/2021 Commonwealth Ave.png",
         "alt": "2021 Commonwealth Ave"
       },
       "members": [
@@ -461,7 +461,7 @@
       },
       "address": "38 Kirkwood Road, Boston, MA 02135",
       "image": {
-        "src": "assets/off-campus/38 Kirkwood Rd.png",
+        "src": "src/assets/off-campus/38 Kirkwood Rd.png",
         "alt": "38 Kirkwood Rd"
       },
       "members": [
@@ -498,7 +498,7 @@
       },
       "address": "1335 Boylston Street, Boston, MA 02215",
       "image": {
-        "src": "assets/off-campus/1335 Boylston St.jpg",
+        "src": "src/assets/off-campus/1335 Boylston St.jpg",
         "alt": "1335 Boylston St"
       },
       "members": [
@@ -519,7 +519,7 @@
       },
       "address": "280 McGrath Highway, Somerville, MA 02143",
       "image": {
-        "src": "assets/off-campus/280 McGrath Hwy.png",
+        "src": "src/assets/off-campus/280 McGrath Hwy.png",
         "alt": "280 McGrath Hwy"
       },
       "members": [
@@ -560,7 +560,7 @@
       },
       "address": "73 Langley Road, Boston, MA 02135",
       "image": {
-        "src": "assets/off-campus/73 Langley Rd.png",
+        "src": "src/assets/off-campus/73 Langley Rd.png",
         "alt": "73 Langley Rd"
       },
       "members": [
@@ -589,7 +589,7 @@
       },
       "address": "47 Orkney Road #2, Boston, MA 02135",
       "image": {
-        "src": "assets/off-campus/47 Orkney Rd.png",
+        "src": "src/assets/off-campus/47 Orkney Rd.png",
         "alt": "47 Orkney Rd"
       },
       "members": [
@@ -622,7 +622,7 @@
       },
       "address": "52 Lane Park, Boston, MA 02135",
       "image": {
-        "src": "assets/off-campus/52 Lane Park.png",
+        "src": "src/assets/off-campus/52 Lane Park.png",
         "alt": "52 Lane Park"
       },
       "members": [
@@ -659,7 +659,7 @@
       },
       "address": "221 Massachusetts Ave, Boston, MA 02115",
       "image": {
-        "src": "assets/off-campus/221 Massachusetts Ave.jpg",
+        "src": "src/assets/off-campus/221 Massachusetts Ave.jpg",
         "alt": "221 Massachusetts Ave"
       },
       "members": [
@@ -684,7 +684,7 @@
       },
       "address": "240 Foster St, Brighton, MA 02135",
       "image": {
-        "src": "assets/off-campus/240 Foster St.png",
+        "src": "src/assets/off-campus/240 Foster St.png",
         "alt": "240 Foster St"
       },
       "members": [
@@ -717,7 +717,7 @@
       },
       "address": "28 Manet Road, Newton, MA 02467",
       "image": {
-        "src": "assets/off-campus/28 Manet Rd.png",
+        "src": "src/assets/off-campus/28 Manet Rd.png",
         "alt": "28 Manet Rd"
       },
       "members": [
@@ -758,7 +758,7 @@
       },
       "address": "97 University Road, Brookline, MA 02445",
       "image": {
-        "src": "assets/off-campus/97 University Rd.png",
+        "src": "src/assets/off-campus/97 University Rd.png",
         "alt": "97 University Rd"
       },
       "members": [
@@ -787,7 +787,7 @@
       },
       "address": "219 Western Ave, Allston, MA 02134",
       "image": {
-        "src": "assets/off-campus/219 Western Ave.jpg",
+        "src": "src/assets/off-campus/219 Western Ave.jpg",
         "alt": "219 Western Ave"
       },
       "members": [
@@ -812,7 +812,7 @@
       },
       "address": "1047 Commonwealth Ave",
       "image": {
-        "src": "assets/off-campus/1047 Commonwealth Ave.png",
+        "src": "src/assets/off-campus/1047 Commonwealth Ave.png",
         "alt": "1047 Commonwealth Ave"
       },
       "members": [

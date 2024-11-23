@@ -1,4 +1,4 @@
-import renderPosts from "./components/renderPosts.js";
+import renderPosts from "./src/components/renderPosts.js";
 
 fetch("db.JSON")
   .then((response) => response.json())

@@ -6,11 +6,11 @@ export default function renderBottomOffCampus(p) {
     </div>
     <div class="bottomIMGcontainer">
       <div class="bottomIMG">
-        <img class="location" src="Assets/postings/location.png"></img>
+        <img class="location" src="src/assets/postings/location.png"></img>
         <span>${p.address}</span>
       </div>
       <div class="bottomIMG">
-        <img class="bed" src="Assets/postings/bed.png" alt="bed"></img>
+        <img class="bed" src="src/assets/postings/bed.png" alt="bed"></img>
         <span>${p.numGroup+p.numSeek} People</span>
       </div>
     </div>
