@@ -5,7 +5,7 @@ fetch("../../about.json")
   .then((data) => {
     console.log(data);
 
-    const aboutDiv = document.querySelector(".about");
+    const aboutDiv = document.querySelector("body");
     aboutDiv.innerHTML = `
 
           <header id="aboutHead">

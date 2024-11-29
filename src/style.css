@@ -111,222 +111,66 @@ nav .menu-icon {
       top: 7%;
       left: 0;
     }
+
   }
-  
-  #gassonHall {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-  }
-  
-  main.homepage {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  button.on-campus {
-    display: flex;
-    flex-direction: row;
-  
-    justify-content: space-between;
-    align-items: center;
-  
-    flex-wrap: nowrap;
-  
-    background-color: #d9d9d9;
-  
-    font-size: 1rem;
-    font-family: "Lexend", sans-serif;
-    font-weight: bold;
-    color: #000000;
-  
-    padding: 0.75rem 1.5rem;
-  
-    border: none;
-  
-    cursor: pointer;
-  }
-  
-  button.off-campus {
-    display: flex;
-    flex-direction: row;
-  
-    justify-content: space-between;
-    align-items: center;
-  
-    flex-wrap: nowrap;
-  
-    background-color: #231f20;
-  
-    font-size: 1rem;
-    font-family: "Lexend", sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-  
-    padding: 0.75rem 1.5rem;
-  
-    border: none;
-  
-    cursor: pointer;
-  }
-  
-  button.location {
-    display: flex;
-    flex-direction: row;
-    border: solid 1px white;
-  }
-  
-  div.buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-  .section-title {
+
+.section-title {
     font-size: 2.5rem;
     font-weight: 200;
     text-align: center;
     margin-bottom: 2rem;
-  }
-  
-  section.splash {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-  }
-  
-  button img {
-    padding-top: 4%;
-  }
-  
-  div.searchBar button.search {
-    display: flex;
-    flex-direction: row;
-    padding: 1%;
-    background-color: #231f20;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-  
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-  
-    /*width: 20%;*/
-  }
-  
-  div.searchBar fieldset select {
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 25px;
-    background: #f8fafc;
-    outline: none;
-    transition: border 0.3s ease;
-    cursor: pointer;
-  }
-  
-  div.searchBar .label-select {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Lexend", sans-serif;
-    /*font-family: monospace;*/
-    font-weight: bold;
-    padding: 1%;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  
-  div.searchBar fieldset {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: nowrap;
-    border: solid 1px #ffffff;
-  }
-  
-  div.searchBar {
-    display: flex;
-    flex-direction: column;
-  
-    flex-basis: 25%;
-    /*border: solid 3px red;*/
-  }
+}
 
-  div.searchBar a {
-    text-decoration: none;
-  }
-  
-  div.searchBar button.search img {
-    padding: 2%;
-    flex-basis: 40%;
-  }
-  
-  div.searchBar button.search p {
-    flex-basis: 60%;
-    color: white;
-    padding: 2%;
-    font-family: "Lexend", sans-serif;
-    /*font-family: monospace;*/
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  
-  .keyword {
+.keyword {
     font-size: 2.5rem;
     font-weight: 600;
     color: #101820;
-  }
-  
-  #post {
+}
+
+#post {
     background-color: #f8fafc;
     color: #101820;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     padding: 2rem 1rem;
     width: 100%;
-    height: auto;
-  }
-  
-  #post .container {
+    height: auto; 
+}
+
+#post .container {
     width: 100%;
-    /* max-width: 600px; */
+    max-width: 600px;
     margin: 0 auto;
     padding: 1rem;
-  }
-  
-  form div {
+}
+
+form div {
     margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-  }
-  
-  #post input,
-  #post select,
-  #post textarea {
+}
+
+#post input, 
+#post select, 
+#post textarea {
     font-size: 1rem;
     padding: 0.75rem 1rem;
     border: 1px solid #e2e8f0;
     border-radius: 25px;
     background: #f8fafc;
-    outline: none;
+    outline: none; 
     transition: border 0.3s ease;
-  }
-  
-  input:focus,
-  select:focus,
-  textarea:focus {
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
     border: 1px solid #101820;
-  }
-  
-  .calendar-button {
+}
+
+.calendar-button {
     display: inline-block;
     font-size: 1rem;
     padding: 0.75rem;
@@ -335,51 +179,51 @@ nav .menu-icon {
     background: #101820;
     color: #ffffff;
     cursor: pointer;
-  }
-  
-  .submit-button {
+}
+
+.submit-button {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
     background: #000000;
     color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
+    border: none; 
+    border-radius: 25px; 
+    cursor: pointer; 
+}
+
+.submit-button:hover {
     background: #000000;
-  }
-  
-  .upload-box {
+}
+
+.upload-box {
     border: 2px dashed #e2e8f0;
-    border-radius: 8px;
+    border-radius: 8px; 
     padding: 2rem;
-    text-align: center;
+    text-align: center; 
     color: #6b7280;
-    cursor: pointer;
+    cursor: pointer; 
     transition: border 0.3s ease, color 0.3s ease;
-  }
-  
-  .upload-box:hover {
+}
+
+.upload-box:hover {
     border-color: #101820;
     color: #101820;
-  }
-  
-  .form-gender {
+}
+
+.form-gender {
     display: flex;
     justify-content: space-between;
-  }
-  
-  #post select {
-    display: inline;
-  }
-  
-  #post i {
+}
+
+#post select {
     display: inline;
 }
 
-.about {
+#post i {
+    display: inline;
+}
+
+body.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -425,13 +269,14 @@ nav .menu-icon {
   .gold {
     width: 100vw;
     height: 30px;
+    background-color: #cd9f58;
   }
   
   div.maroon {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 650px;
+    height: 550px;
     background-color: #852221;
   }
   
@@ -441,7 +286,7 @@ nav .menu-icon {
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    height: 1050px;
+    height: 930px;
     background-color: #cd9f58;
   }
   
@@ -514,9 +359,7 @@ nav .menu-icon {
     background-color: #852221;
     width: 100vw;
     justify-content: center;
-    padding: 30px 0px;
   }
-
   .statement p{
     color: white;
     width: 80vw;
@@ -610,183 +453,16 @@ nav .menu-icon {
     margin-top: 20px;
   }
   
+  
+/* 
 
 footer {
     background-color: #501315;
     padding: 2rem 0;
     color: #ffffff;
-    font-size: 1rem;
+    font-size: 1rem; 
     text-align: center;
-}
-
-  
-  #off-campus, #on-campus {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .post {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    padding: 10px;
-    box-shadow: -3px -3px 8px #888888;
-    margin: 20px;
-  }
-
-  .buttonPlacement {
-    display: flex;
-    align-items: center;
-  }
-
-  .buttonPlacement .rightArrow {
-    order: 1;
-  }
-
- .outsideArrow img {
-    height: 20px; 
-  }
-  
-  .top {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .favoriteContainer {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-  .favorite {
-    margin: 5px;
-    border-width: 0;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-    justify-content: center;
-  }
-  
-  .favorite * {
-    width: 10px;
-    height: 10px;
-  }
-  
-  .arrowContainer {
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    margin-top: 60px;
-  }
-
-  .arrow {
-    margin: 5px;
-    border-width: 0;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  .arrow * {
-    width: 10px;
-    height: 10px;
-  }
-
-  .postHeader {
-    font-size: 2rem;
-  }
-  
-  .postArrows {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    order: 1;
-    width: 75%;
-  }
-
-  .postArrows * {
-    width: 50px;
-    height: 50px;
-  }
-  .bottom {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-  }
-  
-  .bottom * {
-    font-family: "Lexend", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  
-  .looking {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .looking * {
-    margin-right: 30px;
-    margin-top: 10px;
-  }
-  
-  .bottomIMGcontainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .bottomIMG {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .bottomIMG span {
-    font-size: 12px;
-    color: #D0D0D0;
-  }
-  
-  .bottomIMG img {
-    width: 25px;
-    height: 20px;
-    margin-right: 5px;
-  }
-  
-  .showMore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px;
-    border-radius: 7%;
-    padding: 5px;
-  }
-
-  .onCampusPosts, .offCampusPosts {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-  }
-
-  .boldFont {
-    font-weight: bold;
-  }
+} */
 
 
 /* CSS for medium viewport (might not use) */
@@ -796,18 +472,3 @@ footer {
 /* CSS for large viewport */
 @media only screen and (min-width: 1024px) {
 }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    font-family: "HK Grotesk", sans-serif;
-  }
-  
-  /* CSS for medium viewport (might not use) */
-  @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  }
-  
-  /* CSS for large viewport */
-  @media only screen and (min-width: 1024px) {
-  }
-  
