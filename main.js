@@ -62,7 +62,20 @@ export default function renderMainPage(data) {
     //Rendering Lucas' part 
     let about_wrapper = document.createElement("div");
     about_wrapper.classList.add("about");
-    //Add about section to current body
+    about_wrapper.innerHTML = `
+            <div class="container">
+                <h2 class="section-title"><span class="keyword">Mission</span></h2>
+                <p>
+                    At Boston College Roomate Search (BCRS), our vision is to unite BC Students with their ideal roommates. During times of 
+                    stress and uncertainty, when the BC Housing Lottery doesn't go your way, we're here to help ease the path to your ideal
+                    future housing. We also aim to facilitate the roomate searching process when in need of subletters. Being BC Students
+                    ourselves, means that we understand the struggle and pain associated with BC Housing. Therefore, always know that BCRS
+                    is here for you, no matter how difficult the situation may be. 
+
+                    BCRS strives to light the path for a BC Eagle's journey from one nest to another.
+                </p>
+            </div>
+    `;
     body.appendChild(about_wrapper);
 
     //Rendering Harim's part

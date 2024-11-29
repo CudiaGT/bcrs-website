@@ -1,3 +1,4 @@
+export function renderAbout() {
 fetch("../../about.json")
   .then((response) => {
     return response.json();
@@ -69,3 +70,4 @@ fetch("../../about.json")
           </main>
         `;
   });
+}
