@@ -1,12 +1,16 @@
 export function toggleMenu() {
+  return `
+  <script>
     const links = document.querySelector("nav .links");
     links.classList.toggle("active");
+  </script>
+  `;
   }
 
 
-export function renderNavBar(data) {
-  const nav = document.querySelector("#nav");
-  nav.innerHTML = `
+export function renderNavBar() {
+  return `
+  <div id="nav">
   <nav>
   <img
       src="https://cdn.glitch.global/35a90707-afbf-469e-b877-030bdb0009b4/mobile-navigation-bar-menu-responsive-ui-512%20copy.png?v=1732911149726"
@@ -40,5 +44,6 @@ export function renderNavBar(data) {
       <img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/Profile%20Icon.png?v=1732691728436" alt="Profile Icon">
   </div>
 </nav>
+</div>
   `;
 }
