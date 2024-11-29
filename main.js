@@ -2,8 +2,9 @@ import renderHeader from "./src/components/Homepage/Header.js";
 import renderLandingSplash from "./src/components/Homepage/LandingSplash.js";
 import {renderOnCampusListings, renderOffCampusListings} from "./src/components/Homepage/Listings.js";
 import renderForm from "./src/components/Homepage/Form.js";
-import renderListings from "./src/components/Listings/Listings.js"
-
+import renderListings from "./src/components/Listings/Listings.js";
+import { renderNavBar, toggleMenu } from "./src/components/navbar.js";
+import {renderFooter} from "./src/components/footer.js";
 //Declare global form object that will be shared across the module
 //This form object is updated dynamically whenever a change is felt by the select tag in the search bar
 //on the home page
@@ -22,9 +23,11 @@ export default function renderMainPage(data) {
 
     //render header of home page
     let header = document.createElement("header");
-    header.innerHTML += renderHeader();
+    header.innerHTML += renderNavBar();
     //add header to existing body
     body.appendChild(header);
+    let head = document.querySelector("head");
+    head.append(toggleMenu());
 
     //render landing splash of home page
     let landing_Splash = document.createElement("div");
@@ -70,10 +73,7 @@ export default function renderMainPage(data) {
     body.appendChild(form_wrapper);
 
     //Rendering Footer
-    let footer = document.createElement("footer");
-    //Add Footer to current body
-    body.appendChild(footer);
-
+    renderFooter();
 
     //add event listener to all select fields in the searchbar
     const selectArray = document.querySelectorAll(".select");
