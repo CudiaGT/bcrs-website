@@ -200,6 +200,10 @@
     flex-basis: 25%;
     /*border: solid 3px red;*/
   }
+
+  div.searchBar a {
+    text-decoration: none;
+  }
   
   div.searchBar button.search img {
     padding: 2%;
