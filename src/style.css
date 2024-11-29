@@ -1,7 +1,118 @@
 /* Let's do mobile first and then do desktop (potentially a medium viewport if we have time) */
 * {
-    font-family: "Lexend", sans-serif;
+  font-family: "Lexend", sans-serif;
 }
+
+nav a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #421b1b; 
+  padding: 0.5rem 2rem; 
+}
+
+h2.BCRS {
+  font-family: "Arial", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav .goldLogo {
+  color: #cd9f58; 
+}
+
+nav .whiteLogo {
+  color: #ffffff; 
+}
+
+nav .links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav p {
+  margin: 0 1.5rem; 
+  font-weight: bold;
+  position: relative;
+}
+
+nav p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav h2 a span {
+  text-decoration: none;
+}
+
+nav p a:hover {
+  color: #cd9f58; 
+}
+
+nav div.signin {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  background-color: #231F20;
+  padding: 0.5rem 1rem; 
+  border-radius: 0.5rem;
+}
+
+.signin img {
+  width: 1.2rem; 
+  height: auto;
+}
+
+.signin a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.signin a:hover {
+  color: #cd9f58; 
+}
+
+
+nav .menu-icon {
+  display: none; 
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav .menu-icon {
+    display: block; 
+    width: 2rem;
+    height: auto;
+  }
+
+ nav .links {
+    display: none;
+    }
+
+    nav .links.active {
+      display: flex;
+      flex-direction: column; 
+      position: absolute;
+      background-color: #421b1b; 
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      top: 7%;
+      left: 0;
+    }
+
+  }
 
 .section-title {
     font-size: 2.5rem;
