@@ -1,14 +1,12 @@
-fetch("about.json")
+fetch("../../about.json")
   .then((response) => {
     return response.json();
   })
   .then((data) => {
     console.log(data);
 
-    const body = document.querySelector("body");
-    body.className = "about";
-    body.innerHTML = `
-        <section class="about">
+    const aboutDiv = document.querySelector(".about");
+    aboutDiv.innerHTML = `
 
           <header id="aboutHead">
         
@@ -17,7 +15,7 @@ fetch("about.json")
           <main>
             <div class="image-container">
               <p class="overlay-text imgResTop">Our Story</p>
-              <img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/BCres.webp?v=1732136296580" alt"BCRes">
+              <img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/BCres.webp?v=1732136296580" alt="BCRes">
              
              </div>
               
@@ -42,7 +40,7 @@ fetch("about.json")
               
               <div class="mission">
               <img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/DJI_0482.jpg?v=1732313520547" "BC Gasson Hall at Sunset" />
-              <p class="missoin section-title-about">Our Mission</p>
+              <p class="mission section-title-about">Our Mission</p>
               </div>
               <div class="statement">
               <p>${data.mission}
@@ -69,9 +67,9 @@ fetch("about.json")
               </div>
               </div>
           </main>
-        </section>
         `;
-    const footer = document.createElement("footer");
+    const footer = document.querySelector("footer");
+
     footer.innerHTML = `
   <div class="footer-quote">
       <p>"The best thing about having a roommate is always having someone to blame when food goes missing."" - Anonymous</p>
@@ -103,6 +101,4 @@ fetch("about.json")
     <div class="footer-bottom">
       <p>&copy; 2024 Boston College Roomate Search. All rights reserved.</p>
     </div>`;
-    document.querySelector("body").appendChild(footer);
-    console.log(document.querySelector("html"));
   });
