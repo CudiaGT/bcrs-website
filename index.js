@@ -18,9 +18,9 @@ fetch("db.JSON")
         console.log(page);
         if (page == "listings") {
             //collect updated form data
-            let payload = getFormData();
+            let [payload, listingLocation] = getFormData();
             //need a new renderListings function that workes with payload data
-            renderListings(payload, data);
+            renderListings(listingLocation, payload, data);
 
         } else { //if page == null just render home page
             renderMainPage(data);
