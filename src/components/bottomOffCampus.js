@@ -1,4 +1,15 @@
 export default function renderBottomOffCampus(p) {
+  let groupMembers ="";
+  let counter = 0
+  p.members.forEach((m)=> {
+    if (counter === p.members.length - 1) {
+      groupMembers += `${m.name}.`
+    }
+    else {
+      groupMembers += `${m.name}, `;
+    }
+    counter++;
+  });
     return `
     <div class="bottom">
     <div class="looking">
@@ -14,8 +25,10 @@ export default function renderBottomOffCampus(p) {
         <span>${p.numGroup+p.numSeek} People</span>
       </div>
     </div>
-    <div class="showMore offCampus">
-        <span>SHOW MORE...</span>
+    <div class="showMore onCampus">
+        <div class="bottomIMG members">
+          <span>${groupMembers}</span>
+        </div>
     </div>
     </div>
     `;

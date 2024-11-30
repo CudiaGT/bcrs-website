@@ -589,6 +589,11 @@ footer {
 
  .outsideArrow img {
     height: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+  }
+
+  .outsideArrow img:hover {
+    transform: scale(1.6);
   }
   
   .top {
@@ -710,11 +715,39 @@ footer {
   
   .showMore {
     display: flex;
-    justify-content: center;
     align-items: center;
     border: solid 2px;
     border-radius: 7%;
     padding: 5px;
+  }
+
+
+  .showMore:hover {
+    box-shadow: -3px -3px 9px #888888;;
+  }
+
+  .members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 50px;
+  }
+
+  .members img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.1;
+  }
+
+  .members span {
+    text-align: center;
+    z-index: 1;
+    color:#000000
   }
 
   .onCampusPosts, .offCampusPosts {
@@ -730,23 +763,27 @@ footer {
 
 /* CSS for medium viewport (might not use) */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .onCampusPosts, .offCampusPosts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /* CSS for large viewport */
 @media only screen and (min-width: 1024px) {
+  .onCampusPosts, .offCampusPosts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
   
   body {
     display: flex;
     flex-direction: column;
     font-family: "HK Grotesk", sans-serif;
-  }
-  
-  /* CSS for medium viewport (might not use) */
-  @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  }
-  
-  /* CSS for large viewport */
-  @media only screen and (min-width: 1024px) {
   }
   
