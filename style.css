@@ -97,9 +97,9 @@ nav .menu-icon {
     height: auto;
   }
 
- nav .links {
+/* nav .links {
     display: none;
-    }
+    } */
 
     nav .links.active {
       display: flex;
