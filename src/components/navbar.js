@@ -1,12 +1,9 @@
 export function toggleMenu() {
-  return `
-  <script>
     const links = document.querySelector("nav .links");
     links.classList.toggle("active");
-  </script>
-  `;
   }
-
+  
+window.toggleMenu = toggleMenu;
 
 export function renderNavBar() {
   return `

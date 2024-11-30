@@ -26,8 +26,6 @@ export default function renderMainPage(data) {
     header.innerHTML += renderNavBar();
     //add header to existing body
     body.appendChild(header);
-    let head = document.querySelector("head");
-    head.append(toggleMenu());
 
     //render landing splash of home page
     let landing_Splash = document.createElement("div");
@@ -61,9 +59,8 @@ export default function renderMainPage(data) {
 
     //Rendering Lucas' part 
     let about_wrapper = document.createElement("div");
-    about_wrapper.classList.add("about");
+    about_wrapper.classList.add("aboutUs");
     about_wrapper.innerHTML = `
-            <div class="container">
                 <h2 class="section-title"><span class="keyword">Mission</span></h2>
                 <p>
                     At Boston College Roomate Search (BCRS), our vision is to unite BC Students with their ideal roommates. During times of 
@@ -73,8 +70,7 @@ export default function renderMainPage(data) {
                     is here for you, no matter how difficult the situation may be. 
 
                     BCRS strives to light the path for a BC Eagle's journey from one nest to another.
-                </p>
-            </div>
+               </p>
     `;
     body.appendChild(about_wrapper);
 
