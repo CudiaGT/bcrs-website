@@ -393,6 +393,10 @@ nav .menu-icon {
   align-items: center;
   padding: 10px 50px 50px 50px;
 }
+
+.aboutUs p {
+  text-indent: 20px;
+}
   
   .image-container {
     display: flex;
