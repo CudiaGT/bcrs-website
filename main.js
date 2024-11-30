@@ -1,19 +1,22 @@
-import renderHeader from "./src/components/Homepage/Header.js";
 import renderLandingSplash from "./src/components/Homepage/LandingSplash.js";
+import {renderOnCampusForm, renderOffCampusForm} from "./src/components/Homepage/SearchForm.js";
 import {renderOnCampusListings, renderOffCampusListings} from "./src/components/Homepage/Listings.js";
 import renderForm from "./src/components/Homepage/Form.js";
-import renderListings from "./src/components/Listings/Listings.js"
+import { renderNavBar, toggleMenu } from "./src/components/navbar.js";
+import {renderFooter} from "./src/components/footer.js";
 
 //Declare global form object that will be shared across the module
 //This form object is updated dynamically whenever a change is felt by the select tag in the search bar
 //on the home page
 let form = {
-  "listing-location": "",
   "class-year": 0,
   "size-of-group": 0,
   "desired-number-of-roommates": 0,
   "preferred-dorm": ""
 };
+
+//Declare global listing location var that will be shared across the module
+let listingLocation = ""
   
 export default function renderMainPage(data) {
 
@@ -22,9 +25,11 @@ export default function renderMainPage(data) {
 
     //render header of home page
     let header = document.createElement("header");
-    header.innerHTML += renderHeader();
+    header.innerHTML += renderNavBar();
     //add header to existing body
     body.appendChild(header);
+    let head = document.querySelector("head");
+    head.append(toggleMenu());
 
     //render landing splash of home page
     let landing_Splash = document.createElement("div");
@@ -56,10 +61,21 @@ export default function renderMainPage(data) {
     body.appendChild(onCampus_wrapper);
     body.appendChild(offCampus_wrapper);
 
-    //Rendering Lucas' part 
+//Rendering Lucas' part 
     let about_wrapper = document.createElement("div");
-    about_wrapper.classList.add("about");
-    //Add about section to current body
+    about_wrapper.classList.add("aboutUs");
+    about_wrapper.innerHTML = `
+                <h2 class="section-title"><span class="keyword">Mission</span></h2>
+                <p>
+                    At Boston College Roomate Search (BCRS), our vision is to unite BC Students with their ideal roommates. During times of 
+                    stress and uncertainty, when the BC Housing Lottery doesn't go your way, we're here to help ease the path to your ideal
+                    future housing. We also aim to facilitate the roomate searching process when in need of subletters. Being BC Students
+                    ourselves, means that we understand the struggle and pain associated with BC Housing. Therefore, always know that BCRS
+                    is here for you, no matter how difficult the situation may be. 
+
+                    BCRS strives to light the path for a BC Eagle's journey from one nest to another.
+               </p>
+    `;
     body.appendChild(about_wrapper);
 
     //Rendering Harim's part
@@ -70,67 +86,86 @@ export default function renderMainPage(data) {
     body.appendChild(form_wrapper);
 
     //Rendering Footer
-    let footer = document.createElement("footer");
-    //Add Footer to current body
-    body.appendChild(footer);
+    renderFooter();
 
+    //add event listener to check if listing location has been selected. If so render
+    //second form
+    let formWrapper = document.querySelector("main div.formWrapper"); //create anchor delegation
+    let listingLocationSelect = document.querySelector("form.search select");
+    listingLocationSelect.addEventListener("change", (e) => {
+      console.log("Event Target:", e.target);
+      console.log("Event Target Value:", e.target.value);
 
-    //add event listener to all select fields in the searchbar
-    const selectArray = document.querySelectorAll(".select");
-    console.log("selectArray: ", selectArray);
+      //save user's listing location 
+      listingLocation = e.target.value;
+      console.log("listingLocation", listingLocation);
+      localStorage.setItem("listingLocation", listingLocation);
 
-    for (let select of selectArray) {
-      select.addEventListener("change", (e) => {
-        console.log(e.currentTarget);
-        console.log(e.currentTarget.id);
-        console.log(e.target);
-        console.log(e.target.value);
+      // Check if the second form exists, and remove it from the innerHTML of formWrapper
+      let secondForm = formWrapper.querySelector("form.field");
+      if (secondForm) {
+        secondForm.remove();
+      }
 
-        //update the corresponding key in form
-        //convert any numerical answers into integers
+      //render new form underneath first form based on user's selection
+      //let formWrapper = document.querySelector("main div.formWrapper");
+      let newForm;
+      if (listingLocation == "oncampus") {
+        newForm = renderOnCampusForm();
+        
+      } else if (listingLocation == "offcampus") {
+        newForm = renderOffCampusForm();
+      }
+
+      //Append new form to formWrapper dynamically
+      formWrapper.insertAdjacentHTML("beforeend", newForm);
+
+    });
+
+    // Delegate events to dynamically rendered elements
+    formWrapper.addEventListener("change", (e) => {
+      // Check if the event target matches the desired selector
+      console.log(e.target);
+      if (e.target.matches("form.field .select")) { //Target is the tag that triggered the event (ie. select tag of second form)
+        console.log("Event Target ID:", e.target.id);
+        
+
+        // Update form data
         if (checkForNumberInString(e.target.value)) {
-          form[e.currentTarget.id] = Number(e.target.value);
-        } else { //keep string answers as strings
-          form[e.currentTarget.id] = e.target.value;
+          form[e.target.id] = Number(e.target.value);
+        } else {
+          form[e.target.id] = e.target.value;
         }
 
-        console.log("form after change:", form);
-        console.log(`${form[e.currentTarget.id]}`);
-        console.log(`${e.currentTarget.id} value from EVENT: ${e.target.value}`);
+      console.log("Form after change:", form);
+      console.log(`${e.currentTarget.id} value from EVENT: ${e.target.value}`);
+      
+      localStorage.setItem("form", JSON.stringify(form));
+      }
+    });
 
-        //Save updated form to localStorage, allows changed form to be accessible across different windows
-        localStorage.setItem("form", JSON.stringify(form))
+    // Delegate form submission
+    formWrapper.addEventListener("submit", (e) => {
+      if (e.target.matches("form.field")) {
+        e.preventDefault(); // Prevent navigation to .php page
 
-      });
-    }
-
-    //When search button is hit, we want to render new page with appropriate listings 
-    //First, rab form
-    let formTag = document.querySelector("form.search");
-    
-
-    formTag.addEventListener("submit", (e) => {
-      console.log(e.currentTarget);
-      console.log(e.target);
-      console.log(form);
-      e.preventDefault(); //prevents form from navigating to .php page
-
-      //adds parameter "listings" to url and sets its value to "true". Used to render the listings page
-      //from index.js
-      const currentURL = new URL(window.location); 
-      currentURL.searchParams.set("listings", "true");
-      window.location.href = currentURL;
-      console.log(window.location.href);
-    })
+        // Modify the URL and navigate
+        const currentURL = new URL(window.location);
+        currentURL.searchParams.set("listings", "true");
+        window.location.href = currentURL;
+        console.log(window.location.href);
+      }
+    });
   }
 
   //When invoked, gets updated form data from localStorage
   export function getFormData() {
+    const savedListingLocation = localStorage.getItem("listingLocation"); //Retrieve listingLocation from local storage
     const savedForm = localStorage.getItem("form"); //Retrieve form from local storage
     if (savedForm) {
-      return JSON.parse(savedForm); //returned parsed form data if found
+      return [JSON.parse(savedForm), savedListingLocation]; //returned parsed form data if found
     } 
-    return form; //Fallback to the initial form if nothing is stored
+    return [form, savedListingLocation]; //Fallback to the initial form if nothing is stored
   }
 
   //If any of the user answers to the search fields are numbers, this function converts those answers

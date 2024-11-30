@@ -1,59 +1,116 @@
 /* Let's do mobile first and then do desktop (potentially a medium viewport if we have time) */
 * {
-    font-family: "Lexend", sans-serif;
-  }
-  
+  font-family: "Lexend", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #421b1b; 
+  padding: 0.5rem 2rem; 
+}
+
+h2.BCRS {
+  font-family: "Arial", sans-serif;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+nav .goldLogo {
+  color: #cd9f58; 
+}
+
+nav .whiteLogo {
+  color: #ffffff; 
+}
+
+nav .links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav p {
+  margin: 0 1.5rem; 
+  font-weight: bold;
+  position: relative;
+}
+
+nav p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav h2 a span {
+  text-decoration: none;
+}
+
+nav p a:hover {
+  color: #cd9f58; 
+}
+
+nav div.signin {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  background-color: #231F20;
+  padding: 0.5rem 1rem; 
+  border-radius: 0.5rem;
+}
+
+.signin img {
+  width: 1.2rem; 
+  height: auto;
+}
+
+.signin a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.signin a:hover {
+  color: #cd9f58; 
+}
+
+
+nav .menu-icon {
+  display: none; 
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
   nav {
-    display: flex;
-    border: solid 3px #852221;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    background-color: #852221;
-    align-items: center;
+    justify-content: space-between;
   }
-  
-  h2.BCRS-Logo {
-    font-family: "Arial", sans-serif;
-    padding-top: 1%;
-    flex-basis: 10%;
-    margin: 2%;
-    font-size: 2.5em;
+
+  nav .menu-icon {
+    display: block; 
+    width: 2rem;
+    height: auto;
   }
-  
-  nav span.gold {
-    color: #cd9f58;
-  }
-  
-  nav span.white {
-    color: #ffffff;
-  }
-  
-  nav p {
-    /*display: inline;*/
-    padding: 2% 2%;
-    flex-grow: 1;
-    color: white;
-    text-align: center;
-    /*border: solid 2px orange;*/
-    flex-basis: auto;
-    margin: 2%;
-  
-    font-family: "Lexend", sans-serif;
-    font-weight: bold;
-  }
-  
-  h2 a {
-    text-decoration: none;
-  }
-  
-  nav p a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  a:hover {
-    color: #cd9f58;
+
+  nav .links {
+    display: none;
+    }
+
+    nav .links.active {
+      display: flex;
+      flex-direction: column; 
+      position: absolute;
+      background-color: #421b1b; 
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      top: 7%;
+      left: 0;
+    }
   }
   
   #gassonHall {
@@ -306,6 +363,19 @@ form div {
     flex-direction: column;
     justify-content: center;
   }
+
+.aboutUs {
+  display: flex !important;
+  background-color: #cd9f58 !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px 50px 50px;
+}
+
+.aboutUs p {
+  text-indent: 20px;
+}
   
   .image-container {
     display: flex;
@@ -709,6 +779,159 @@ footer {
   .boldFont {
     font-weight: bold;
   }
+
+/* Sign-in container */
+.signin-container {
+  display: flex;
+  flex-direction: horizontal;
+  max-height: 100vh;
+  min-width: auto;
+  font-family: "Lexend", sans-serif;
+  color: #ffffff; /* White text for contrast */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #231f20; /* Dark gray background for the card */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo or heading */
+.signin-container h1 {
+  font-size: 2rem;
+  color: #cd9f58; /* Gold color for the heading */
+  margin-bottom: 1rem;
+}
+
+/* Input fields */
+.signin-container input[type="text"],
+.signin-container input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #ffffff; /* White background for inputs */
+  color: #231f20; /* Dark gray text */
+  font-size: 1rem;
+}
+
+/* Button styling */
+.signin-container button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #cd9f58; /* Gold background */
+  color: #231f20; /* Dark text for contrast */
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-container button:hover {
+  background-color: #b88844; /* Darker gold for hover */
+}
+
+/* Link for sign-up or forgotten password */
+.signin-container a {
+  display: block;
+  margin-top: 1rem;
+  color: #cd9f58; /* Gold for links */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.signin-container a:hover {
+  text-decoration: underline;
+}
+
+/* Sign-up container */
+.signup-container {
+  display: flex;
+  flex-direction: horizontal;
+  max-height: 100vh;
+  min-width: auto;
+  font-family: "Lexend", sans-serif;
+  color: #ffffff; /* White text for contrast */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #231f20; /* Dark gray background for the card */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Heading */
+.signup-container h1 {
+    font-size: 2rem;
+    color: #cd9f58; /* Gold color for the heading */
+    margin-bottom: 1rem;
+}
+
+/* Input fields */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="date"],
+.signup-container input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #ffffff; /* White background for inputs */
+    color: #231F20; /* Dark gray text */
+    font-size: 1rem;
+}
+
+/* Checkbox styling */
+.signup-container label {
+    display: block;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.signup-container input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Button styling */
+.signup-container button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: #cd9f58; /* Gold background */
+    color: #231F20; /* Dark text for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #b88844; /* Darker gold for hover */
+}
+
+/* Links */
+.signup-container a {
+    display: block;
+    margin-top: 1rem;
+    color: #cd9f58; /* Gold for links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
 
 
 /* CSS for medium viewport (might not use) */
