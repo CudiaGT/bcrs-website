@@ -384,6 +384,15 @@ nav .menu-icon {
     flex-direction: column;
     justify-content: center;
   }
+
+.aboutUs {
+  display: flex !important;
+  background-color: #cd9f58 !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px 50px 50px;
+}
   
   .image-container {
     display: flex;
