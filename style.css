@@ -942,7 +942,10 @@ footer {
     text-decoration: underline;
 }
 
-
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* CSS for medium viewport (might not use) */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
