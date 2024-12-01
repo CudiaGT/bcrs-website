@@ -26,6 +26,7 @@ export default function renderMainPage(data) {
     //render header of home page
     let header = document.createElement("header");
     header.innerHTML += renderNavBar();
+    
     //add header to existing body
     body.appendChild(header);
     
@@ -60,12 +61,11 @@ export default function renderMainPage(data) {
     body.appendChild(onCampus_wrapper);
     body.appendChild(offCampus_wrapper);
 
-    //Rendering Lucas' part 
+//Rendering Lucas' part 
     let about_wrapper = document.createElement("div");
 
     about_wrapper.classList.add("aboutUs");
     about_wrapper.innerHTML = `
-            <div class="container">
                 <h2 class="section-title"><span class="keyword">Mission</span></h2>
                 <p>
                     At Boston College Roomate Search (BCRS), our vision is to unite BC Students with their ideal roommates. During times of 
@@ -75,9 +75,7 @@ export default function renderMainPage(data) {
                     is here for you, no matter how difficult the situation may be. 
 
                     BCRS strives to light the path for a BC Eagle's journey from one nest to another.
-
                </p>
-            </div>
     `;
     body.appendChild(about_wrapper);
 
@@ -155,10 +153,43 @@ export default function renderMainPage(data) {
         // Modify the URL and navigate
         const currentURL = new URL(window.location);
         currentURL.searchParams.set("listings", "true");
-        window.location.href = currentURL;
-        console.log(window.location.href);
+        currentURL.searchParams.delete("detailView");
+        window.location.href = currentURL; //everytime window.location.href changes, index.js is rerun
+        console.log("New URL:", window.location.href);
       }
     });
+
+
+    //Add event listener to see if showMoreLink of offcampus posting is clicked. If so, navigate to detailView page
+    //grab all offCampusCardLinks
+    //TO-DO: For some reason the offCampusCardLinks ("Show More") aren't being selected. Need to fix this.
+    /*let offCampusCardLinks = document.querySelectorAll("#off-campus a.showMoreLink");
+    let offCampusIdentifier;
+    console.log(offCampusCardLinks);
+
+    for (let link of offCampusCardLinks) {
+      link.addEventListener("click", (e) => {
+        e.preventDefault(); //Prevent navigation to link
+                //print out element that triggered event
+                console.log("Click event triggered on:", e.target);
+                console.log("Default prevented");
+
+                //when showMoreLink on a card is clicked
+                //we want to save any specific info (ie. address) from the card
+                offCampusIdentifier = lastChild.querySelector("div.bottomIMG span").textContent; //returns a string
+                console.log("offCampusIdentifier:", offCampusIdentifier);
+                //Save identifier to local storage
+                localStorage.setItem("offCampusIdentifier", offCampusIdentifier);
+
+                //Also want to change params of url in order to render DetailView page from index.js
+                //Change URL params
+                const currentURL = new URL(window.location);
+                currentURL.searchParams.set("detailView", "true");
+                currentURL.searchParams.delete("listings");
+                window.location.href = currentURL;
+                console.log("New URL:", window.location.href);
+      })
+    }*/
   }
 
   //When invoked, gets updated form data from localStorage
