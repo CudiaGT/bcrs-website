@@ -643,6 +643,11 @@ footer {
 
  .outsideArrow img {
     height: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+  }
+
+  .outsideArrow img:hover {
+    transform: scale(1.6);
   }
   
   .top {
@@ -764,11 +769,21 @@ footer {
   
   .showMore {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border: solid 2px;
     border-radius: 7%;
     padding: 5px;
+  }
+
+
+  .showMore:hover {
+    box-shadow: -3px -3px 9px #888888;;
+  }
+
+  .showMore a {
+    text-decoration: none;
+    color: black;
   }
 
   .onCampusPosts, .offCampusPosts {
@@ -933,14 +948,39 @@ footer {
     text-decoration: underline;
 }
 
-
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* CSS for medium viewport (might not use) */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .onCampusPosts, .offCampusPosts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /* CSS for large viewport */
 @media only screen and (min-width: 1024px) {
+  .onCampusPosts, .offCampusPosts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "HK Grotesk", sans-serif;
+  }
+  
+=======
   .container {
     padding: 2rem;
     min-width: 1024px;
