@@ -152,8 +152,9 @@ export default function renderMainPage(data) {
         // Modify the URL and navigate
         const currentURL = new URL(window.location);
         currentURL.searchParams.set("listings", "true");
-        window.location.href = currentURL;
-        console.log(window.location.href);
+        currentURL.searchParams.delete("detailView");
+        window.location.href = currentURL; //everytime window.location.href changes, index.js is rerun
+        console.log("New URL:", window.location.href);
       }
     });
   }
