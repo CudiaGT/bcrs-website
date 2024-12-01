@@ -2,7 +2,7 @@ export function renderFooter() {
     const footer = document.createElement("footer");
     footer.innerHTML = `
     <div class="footer-quote">
-    <p>"The best thing about having a roommate is always having someone to blame when food goes missing."" - Anonymous</p>
+    <p>"The best thing about having a roommate is always having someone to blame when food goes missing." - Anonymous BC Student</p>
   </div>
   <div class="footer-details">
     <div class="footer-column">
