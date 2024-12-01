@@ -28,6 +28,7 @@ export default function renderMainPage(data) {
     header.innerHTML += renderNavBar();
     //add header to existing body
     body.appendChild(header);
+    
 
     //render landing splash of home page
     let landing_Splash = document.createElement("div");
