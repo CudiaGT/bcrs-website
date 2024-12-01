@@ -1,12 +1,9 @@
 export function toggleMenu() {
-  return `
-  <script>
     const links = document.querySelector("nav .links");
     links.classList.toggle("active");
-  </script>
-  `;
   }
-
+  
+window.toggleMenu = toggleMenu;
 
 export function renderNavBar() {
   return `
@@ -19,12 +16,12 @@ export function renderNavBar() {
       onclick="toggleMenu()"
   />
   <h2 class="BCRS">
-    <a href = "index.html#gassonHall"><span class="goldLogo">BC</span><span class="whiteLogo">RS</span></a>
+    <a href = "#gassonHall"><span class="goldLogo">BC</span><span class="whiteLogo">RS</span></a>
   </h2>
   <div class="links">
-  <p><a href="index.html#gassonHall">Home</a></p>
-  <p><a href="index.html#on-campus">Listings</a></p>
-  <p><a href="index.html#mission">About</a></p>
+  <p><a href="#gassonHall">Home</a></p>
+  <p><a href="#on-campus">Listings</a></p>
+  <p><a href="#mission">About</a></p>
   <p>
     <a
       href="https://www.bc.edu/bc-web/offices/studentaffairs/sites/residential-life/living-in-bc-housing/hall-openings-closings.html"
@@ -37,7 +34,7 @@ export function renderNavBar() {
       target="_blank">Resources
     </a>
   </p>
-  <p><a href="index.html#post">Contact</a></p>
+  <p><a href="#post">Contact</a></p>
   </div>
   <div class="signin">
       <a href="signin.html">Sign In</a>

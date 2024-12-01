@@ -97,7 +97,7 @@ nav .menu-icon {
     height: auto;
   }
 
- nav .links {
+  nav .links {
     display: none;
     }
 
@@ -283,107 +283,99 @@ nav .menu-icon {
     color: #101820;
   }
   
-  #post {
-    background-color: #f8fafc;
-    color: #101820;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    width: 100%;
-    height: auto;
-  }
-  
-  #post .container {
-    width: 100%;
-    /* max-width: 600px; */
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  
-  form div {
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  #post input,
-  #post select,
-  #post textarea {
-    font-size: 1rem;
-    padding: 0.75rem 1rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 25px;
-    background: #f8fafc;
-    outline: none;
-    transition: border 0.3s ease;
-  }
-  
-  input:focus,
-  select:focus,
-  textarea:focus {
-    border: 1px solid #101820;
-  }
-  
-  .calendar-button {
-    display: inline-block;
-    font-size: 1rem;
-    padding: 0.75rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 25px;
-    background: #101820;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
-  .submit-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    background: #000000;
-    color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background: #000000;
-  }
-  
-  .upload-box {
-    border: 2px dashed #e2e8f0;
-    border-radius: 8px;
-    padding: 2rem;
-    text-align: center;
-    color: #6b7280;
-    cursor: pointer;
-    transition: border 0.3s ease, color 0.3s ease;
-  }
-  
-  .upload-box:hover {
-    border-color: #101820;
-    color: #101820;
-  }
-  
-  .form-gender {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #post select {
-    display: inline;
-  }
-  
-  #post i {
-    display: inline;
+#post {
+  background-color: #f8fafc;
+  color: #101820;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  width: 100%;
 }
+
+#post .container {
+  max-width: 667px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+form div {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.residents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resident-row {
+  display: flex;
+  gap: 1rem;
+}
+
+#post input,
+#post select,
+#post textarea {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 25px;
+  background: #f8fafc;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#post input:focus,
+#post select:focus,
+#post textarea:focus {
+  border: 1px solid #101820;
+}
+
+.submit-button {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #101820;
+}
+
+.form-date,
+.form-address,
+.form-dorm,
+.form-rent,
+.form-utilities {
+  display: none; /* Hidden by default */
+}
+  
 
 .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+.aboutUs {
+  display: flex !important;
+  background-color: #cd9f58 !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px 50px 50px;
+}
+
+.aboutUs p {
+  text-indent: 20px;
+}
   
   .image-container {
     display: flex;
@@ -820,6 +812,159 @@ footer {
   .boldFont {
     font-weight: bold;
   }
+
+/* Sign-in container */
+.signin-container {
+  display: flex;
+  flex-direction: horizontal;
+  max-height: 100vh;
+  min-width: auto;
+  font-family: "Lexend", sans-serif;
+  color: #ffffff; /* White text for contrast */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #231f20; /* Dark gray background for the card */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo or heading */
+.signin-container h1 {
+  font-size: 2rem;
+  color: #cd9f58; /* Gold color for the heading */
+  margin-bottom: 1rem;
+}
+
+/* Input fields */
+.signin-container input[type="text"],
+.signin-container input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #ffffff; /* White background for inputs */
+  color: #231f20; /* Dark gray text */
+  font-size: 1rem;
+}
+
+/* Button styling */
+.signin-container button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #cd9f58; /* Gold background */
+  color: #231f20; /* Dark text for contrast */
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-container button:hover {
+  background-color: #b88844; /* Darker gold for hover */
+}
+
+/* Link for sign-up or forgotten password */
+.signin-container a {
+  display: block;
+  margin-top: 1rem;
+  color: #cd9f58; /* Gold for links */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.signin-container a:hover {
+  text-decoration: underline;
+}
+
+/* Sign-up container */
+.signup-container {
+  display: flex;
+  flex-direction: horizontal;
+  max-height: 100vh;
+  min-width: auto;
+  font-family: "Lexend", sans-serif;
+  color: #ffffff; /* White text for contrast */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #231f20; /* Dark gray background for the card */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Heading */
+.signup-container h1 {
+    font-size: 2rem;
+    color: #cd9f58; /* Gold color for the heading */
+    margin-bottom: 1rem;
+}
+
+/* Input fields */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="date"],
+.signup-container input[type="tel"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #ffffff; /* White background for inputs */
+    color: #231F20; /* Dark gray text */
+    font-size: 1rem;
+}
+
+/* Checkbox styling */
+.signup-container label {
+    display: block;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+.signup-container input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+/* Button styling */
+.signup-container button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: #cd9f58; /* Gold background */
+    color: #231F20; /* Dark text for contrast */
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-container button:hover {
+    background-color: #b88844; /* Darker gold for hover */
+}
+
+/* Links */
+.signup-container a {
+    display: block;
+    margin-top: 1rem;
+    color: #cd9f58; /* Gold for links */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
 
 
 /* CSS for medium viewport (might not use) */
