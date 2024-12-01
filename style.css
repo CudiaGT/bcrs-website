@@ -200,7 +200,7 @@ nav .menu-icon {
   
   div.searchBar button.search {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 1%;
     background-color: #231f20;
     justify-content: space-between;
