@@ -769,6 +769,7 @@ footer {
   .showMore {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: solid 2px;
     border-radius: 7%;
     padding: 5px;
@@ -777,30 +778,6 @@ footer {
 
   .showMore:hover {
     box-shadow: -3px -3px 9px #888888;;
-  }
-
-  .members {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    height: 50px;
-  }
-
-  .members img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 0.1;
-  }
-
-  .members span {
-    text-align: center;
-    z-index: 1;
-    color:#000000
   }
 
   .onCampusPosts, .offCampusPosts {

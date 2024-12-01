@@ -26,9 +26,7 @@ export default function renderBottomOnCampus(p) {
       </div>
     </div>
     <div class="showMore onCampus">
-        <div class="bottomIMG members">
-          <span>${groupMembers}</span>
-        </div>
+      <span>Show More...</span>
     </div>
     </div>
     `;
