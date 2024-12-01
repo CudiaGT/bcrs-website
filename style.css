@@ -294,7 +294,6 @@ nav .menu-icon {
 }
 
 #post .container {
-  max-width: 667px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -310,11 +309,19 @@ form div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0;
 }
 
 .resident-row {
   display: flex;
   gap: 1rem;
+  margin: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 #post input,
@@ -326,7 +333,6 @@ form div {
   border-radius: 25px;
   background: #f8fafc;
   outline: none;
-  transition: border 0.3s ease;
 }
 
 #post input:focus,
@@ -335,7 +341,8 @@ form div {
   border: 1px solid #101820;
 }
 
-.submit-button {
+.submit-button,
+#add-more-residents {
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
   background: #000000;
@@ -345,17 +352,11 @@ form div {
   cursor: pointer;
 }
 
-.submit-button:hover {
+.submit-button:hover,
+#add-more-residents:hover {
   background: #101820;
 }
-
-.form-date,
-.form-address,
-.form-dorm,
-.form-rent,
-.form-utilities {
-  display: none; /* Hidden by default */
-}
+  
   
 
 .about {
@@ -940,19 +941,55 @@ footer {
 
 /* CSS for large viewport */
 @media only screen and (min-width: 1024px) {
+  .container {
+    padding: 2rem;
+    min-width: 1024px;
+  }
+
+  .form-date,
+  .form-address,
+  .form-dorm,
+  .form-rent,
+  .form-utilities {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .form-date label,
+  .form-address label,
+  .form-dorm label,
+  .form-rent label,
+  .form-utilities label {
+    flex: 1.5;
+    text-align: left;
+  }
+
+  .form-date input,
+  .form-address input,
+  .form-dorm select,
+  .form-rent input,
+  .form-utilities select,
+  .residents-container input,
+  .residents-container select {
+    flex: 10;
+  }
+
+  .resident-row {
+    justify-content: space-between;
+  }
+
+  .residents-container {
+    gap: 2rem;
+  }
+
+  .submit-button,
+  #add-more-residents {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+  }
+
+  form div {
+    margin-bottom: 2rem;
+  }
 }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    font-family: "HK Grotesk", sans-serif;
-  }
-  
-  /* CSS for medium viewport (might not use) */
-  @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  }
-  
-  /* CSS for large viewport */
-  @media only screen and (min-width: 1024px) {
-  }
-  
