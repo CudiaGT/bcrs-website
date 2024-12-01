@@ -53,7 +53,12 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
 
                 //when showMoreLink on a card is clicked
                 //we want to save any specific info (ie. address) from the card
-                offCampusIdentifier = lastChild.querySelector("div.bottomIMG span").textContent; //returns a string
+                //Ensures that we're always getting the address of the post with the a tag
+                //that triggered the click event
+
+                //Navigate up the DOM then down
+                offCampusIdentifier = showMoreLink.closest("div.post").querySelector("div.bottomIMG span").textContent;
+
                 console.log("offCampusIdentifier:", offCampusIdentifier);
                 //Save identifier to local storage
                 localStorage.setItem("offCampusIdentifier", offCampusIdentifier);
@@ -72,6 +77,6 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
 
 
 export function getOffCampusIdentifier() {
-    const savedOffCampusIdentifier = localStorage.getItem("offCampusIdentifier");
+    let savedOffCampusIdentifier = localStorage.getItem("offCampusIdentifier");
     return savedOffCampusIdentifier;
 }
