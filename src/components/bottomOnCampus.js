@@ -15,7 +15,7 @@ export default function renderBottomOnCampus(p) {
       </div>
     </div>
     <div class="showMore onCampus">
-        <span>SHOW MORE...</span>
+        <a href="javascript:void(0)" class="showMoreLink"><span>SHOW MORE...</span></a>
     </div>
     </div>
     `;

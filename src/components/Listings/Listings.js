@@ -1,10 +1,15 @@
 import renderFilteredPosts from "./renderFilteredPosts.js";
+import {getFormData} from "../../../main.js";
 
 
 
 
 export default function renderListings(listingLocation, payload, data) {
     console.log("IN Listings.js");
+    const urlParams = new URLSearchParams(window.location.search);
+    console.log("Listings Param:", urlParams.get("listings"));
+    console.log("Detail View Param: ", urlParams.get("detailView"));
+
     console.log("payload", payload);
     console.log("data: ", data);
 
