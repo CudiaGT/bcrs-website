@@ -291,6 +291,7 @@ nav .menu-icon {
   align-items: center;
   padding: 2rem 1rem;
   width: 100%;
+  overflow-x: hidden;
 }
 
 #post .container {
