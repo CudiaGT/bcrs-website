@@ -1,24 +1,27 @@
 export default function renderForm() {
   setTimeout(() => {
-    // Ensure this runs after the form is rendered
     const locationSelect = document.getElementById("location");
-    const startDateField = document.querySelector(".form-date");
+    const dateField = document.querySelector(".form-date");
     const addressField = document.querySelector(".form-address");
-    const dormField = document.querySelector(".form-dorm");
+    const dormField = document.querySelector(".form-dorm select");
     const rentField = document.querySelector(".form-rent");
     const utilitiesField = document.querySelector(".form-utilities");
 
+    // on-campus off-campus toggle feature for form fields
     const toggleFields = () => {
       const locationValue = locationSelect.value;
 
+      // off-campus categories (show - dates, address, rent, utilities | hide - dorm)
       if (locationValue === "off-campus") {
-        startDateField.style.display = "flex";
+        dateField.style.display = "flex";
         addressField.style.display = "flex";
         dormField.style.display = "none";
         rentField.style.display = "flex";
         utilitiesField.style.display = "flex";
-      } else if (locationValue === "on-campus") {
-        startDateField.style.display = "none";
+      }
+      // on-campus categories (show - dorm | hide - dates, address, rent, utilities)
+      else if (locationValue === "on-campus") {
+        dateField.style.display = "none";
         addressField.style.display = "none";
         dormField.style.display = "flex";
         rentField.style.display = "none";
@@ -26,15 +29,17 @@ export default function renderForm() {
       }
     };
 
+    // call toggleField when location changes between on-campus and off-campus
     if (locationSelect) {
       locationSelect.addEventListener("change", toggleFields);
-      toggleFields(); // Initialize field visibility
+      toggleFields();
     }
 
-    // Add functionality for "add more" button
+    // adding more current resident (pre-existing group) feature
     const addMoreButton = document.getElementById("add-more-residents");
     const residentsContainer = document.querySelector(".residents-container");
 
+    // add a pair of resident name and academic year input fields when "add more" is clicked
     addMoreButton.addEventListener("click", () => {
       const newResidentRow = document.createElement("div");
       newResidentRow.className = "resident-row";
@@ -54,6 +59,94 @@ export default function renderForm() {
       `;
 
       residentsContainer.appendChild(newResidentRow);
+    });
+
+    // create mock database for new input values
+    const form = document.querySelector(".post-form");
+    const mockDatabase = {
+      oncampus: [],
+      offcampus: []
+    };
+
+    // exception usage of global variable for demonstration purpose
+    window.mockDatabase = mockDatabase;
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const location = locationSelect.value;
+      const residents = Array.from(
+        document.querySelectorAll(".resident-row")
+      ).map((row) => ({
+        name: row.querySelector('[name="resident-name"]').value,
+        academicYear: row.querySelector('[name="resident-year"]').value
+      }));
+
+      // images are replaced with placeholders (would lead to appropriate path with actual backend)
+      const numSeek = parseInt(document.getElementById("looking-for").value);
+      const image = {
+        src: "actual/image/link.jpg",
+        alt: "actual image name"
+      };
+
+      // parse data appropriately based on location (on-campus vs. off-campus)
+      if (location === "on-campus") {
+        const dorm = dormField.value;
+        const newEntry = {
+          numGroup: residents.length,
+          numSeek,
+          aim: `${residents.length + numSeek}-man housing`,
+          dorm,
+          image,
+          members: residents
+        };
+        mockDatabase.oncampus.push(newEntry);
+      } else {
+        const address = addressField.querySelector("input").value;
+        const rent = parseFloat(rentField.querySelector("input").value);
+        const utilities = utilitiesField.querySelector("select").value;
+        const period = {
+          start: {
+            month: parseInt(
+              new Date(document.getElementById("start-date").value).getMonth() +
+                1
+            ),
+            day: parseInt(
+              new Date(document.getElementById("start-date").value).getDate()
+            ),
+            year: parseInt(
+              new Date(document.getElementById("start-date").value).getFullYear()
+            )
+          },
+          end: {
+            month: parseInt(
+              new Date(document.getElementById("end-date").value).getMonth() +
+                1
+            ),
+            day: parseInt(
+              new Date(document.getElementById("end-date").value).getDate()
+            ),
+            year: parseInt(
+              new Date(document.getElementById("end-date").value).getFullYear()
+            )
+          }
+        };
+
+        // format input values in appropriate style
+        const newEntry = {
+          numGroup: residents.length,
+          numSeek,
+          rent,
+          utilities,
+          period,
+          address,
+          image,
+          members: residents
+        };
+        mockDatabase.offcampus.push(newEntry);
+      }
+
+      console.log("Database Successfully Updated: ", mockDatabase); // For testing
     });
   }, 0);
 
@@ -129,12 +222,19 @@ export default function renderForm() {
 
     <div class="form-dorm">
       <label for="dorm">Preferred-Dorm:</label>
-      <input
-        type="text"
-        id="dorm"
-        name="dorm"
-        placeholder="ex. Gabelli"
-      />
+      <select id="dorm" name="dorm">
+        <option value="Gabelli">Gabelli</option>
+        <option value="Ignacio">Ignacio</option>
+        <option value="Modulars">Modulars</option>
+        <option value="Ninety St. Thomas More">Ninety St. Thomas More</option>
+        <option value="Reservoir">Reservoir</option>
+        <option value="Rubenstein">Rubenstein</option>
+        <option value="Stayer">Stayer</option>
+        <option value="Thomas More">Thomas More</option>
+        <option value="Vanderslice">Vanderslice</option>
+        <option value="Voute">Voute</option>
+        <option value="Walsh">Walsh</option>
+      </select>
     </div>
 
     <div class="form-address">
