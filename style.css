@@ -972,15 +972,13 @@ footer {
     justify-content: space-around;
     align-items: center;
   }
-}
   
   body {
     display: flex;
     flex-direction: column;
     font-family: "HK Grotesk", sans-serif;
   }
-  
-=======
+
   .container {
     padding: 2rem;
     min-width: 1024px;

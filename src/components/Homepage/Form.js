@@ -1,24 +1,27 @@
 export default function renderForm() {
   setTimeout(() => {
     const locationSelect = document.getElementById("location");
-    const startDateField = document.querySelector(".form-date");
+    const dateField = document.querySelector(".form-date");
     const addressField = document.querySelector(".form-address");
-    const dormField = document.querySelector(".form-dorm");
+    const dormField = document.querySelector(".form-dorm select");
     const rentField = document.querySelector(".form-rent");
     const utilitiesField = document.querySelector(".form-utilities");
 
-    // on-campus off-campus form toggle feature
+    // on-campus off-campus toggle feature for form fields
     const toggleFields = () => {
       const locationValue = locationSelect.value;
 
+      // off-campus categories (show - dates, address, rent, utilities | hide - dorm)
       if (locationValue === "off-campus") {
-        startDateField.style.display = "flex";
+        dateField.style.display = "flex";
         addressField.style.display = "flex";
         dormField.style.display = "none";
         rentField.style.display = "flex";
         utilitiesField.style.display = "flex";
-      } else if (locationValue === "on-campus") {
-        startDateField.style.display = "none";
+      }
+      // on-campus categories (show - dorm | hide - dates, address, rent, utilities)
+      else if (locationValue === "on-campus") {
+        dateField.style.display = "none";
         addressField.style.display = "none";
         dormField.style.display = "flex";
         rentField.style.display = "none";
@@ -26,6 +29,7 @@ export default function renderForm() {
       }
     };
 
+    // call toggleField when location changes between on-campus and off-campus
     if (locationSelect) {
       locationSelect.addEventListener("change", toggleFields);
       toggleFields();
@@ -35,6 +39,7 @@ export default function renderForm() {
     const addMoreButton = document.getElementById("add-more-residents");
     const residentsContainer = document.querySelector(".residents-container");
 
+    // add a pair of resident name and academic year input fields when "add more" is clicked
     addMoreButton.addEventListener("click", () => {
       const newResidentRow = document.createElement("div");
       newResidentRow.className = "resident-row";
@@ -62,6 +67,7 @@ export default function renderForm() {
       oncampus: [],
       offcampus: []
     };
+
     // exception usage of global variable for demonstration purpose
     window.mockDatabase = mockDatabase;
 
@@ -76,12 +82,14 @@ export default function renderForm() {
         academicYear: row.querySelector('[name="resident-year"]').value
       }));
 
+      // images are replaced with placeholders (would lead to appropriate path with actual backend)
       const numSeek = parseInt(document.getElementById("looking-for").value);
       const image = {
         src: "actual/image/link.jpg",
         alt: "actual image name"
       };
 
+      // parse data appropriately based on location (on-campus vs. off-campus)
       if (location === "on-campus") {
         const dorm = dormField.value;
         const newEntry = {
@@ -123,6 +131,8 @@ export default function renderForm() {
             )
           }
         };
+
+        // format input values in appropriate style
         const newEntry = {
           numGroup: residents.length,
           numSeek,
@@ -136,7 +146,7 @@ export default function renderForm() {
         mockDatabase.offcampus.push(newEntry);
       }
 
-      console.log("Updated Database:", mockDatabase); // For testing
+      console.log("Database Successfully Updated: ", mockDatabase); // For testing
     });
   }, 0);
 
