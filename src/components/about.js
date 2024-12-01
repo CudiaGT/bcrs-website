@@ -1,5 +1,5 @@
 export function renderAbout() {
-fetch("../../about.json")
+fetch("../about.json")
   .then((response) => {
     return response.json();
   })
