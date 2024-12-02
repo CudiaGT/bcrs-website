@@ -4,9 +4,11 @@ import { renderNavBar } from "../../components/navbar.js";
 function getCurrentMembersMarkup(matchingListing) {
     let membersMarkUp = "";
     let members = matchingListing.members;
+    let counter = 1
     for (let index in members) {
         console.log("Member: ", members[index]);
-        membersMarkUp += `<p class="current-member">${index}. <strong>${members[index].name}</strong>, ${members[index].academicYear}</p>`
+        membersMarkUp += `<p class="current-member">${counter}. <strong>${members[index].name}</strong>, ${members[index].academicYear}</p>`
+        counter++;
     }
     console.log(membersMarkUp);
     return membersMarkUp;
@@ -16,6 +18,7 @@ function getCurrentMembersMarkup(matchingListing) {
 
 function renderDetailViewPost(matchingListing) {
     return `
+    <div class="dvcontainer">
     <div class = "topImage">
       <img src = "${matchingListing.image.src}" alt = "${matchingListing.image.alt}" />
     </div>
@@ -23,11 +26,11 @@ function renderDetailViewPost(matchingListing) {
       <div class = "detail-view-wrapper">
         <div class = "personnel-info">
           <div class = "current-members">
-            <h2> Current Members:</h2>
+            <h2>Group:</h2>
             ${getCurrentMembersMarkup(matchingListing)}
           </div>
           <div class = "numSeeking">
-            <h2> Seeking:</h2>
+            <h2>Seeking:</h2>
             <h1><strong>${matchingListing.numSeek}</strong></h1>
             <p>more</p>
           </div>
@@ -52,6 +55,7 @@ function renderDetailViewPost(matchingListing) {
         </div>
       </div>
     </div>
+    </div>
     `;
 }
 
@@ -60,8 +64,6 @@ export default function renderDetailView(matchingListing) {
     console.log("In renderDetailView.js");
 
     let body = document.querySelector("body");
-    //add class to body for styling
-    body.classList.add("detailView");
 
     //render navbar for detail view page
     body.insertAdjacentHTML("beforeend", renderNavBar());

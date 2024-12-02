@@ -957,12 +957,11 @@ footer {
 }
 
 
-/*DetailView styling below (applied in renderDetailView.js)*/
+/* DetailView styling below (applied in renderDetailView.js) */
 
 div.datesWrapper {
   display: flex;
-  flex-direction: row;
-  border: solid 3px #cd9f58;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -971,7 +970,7 @@ div.timeline h2 {
 }
 
 div.timeline {
-  border: solid 5px #421b1b;
+  border-top: solid 5px #421b1b;
 }
 
 div.personnel-info div.numSeeking p {
@@ -1010,14 +1009,13 @@ div.personnel-info div h2 { /*Children of personnel-info div */
 
 div.personnel-info div { /*Children of personnel-info div */
   /*padding: 10%;*/
-  border: solid 5px #cd9f58;
   margin: 2%;
+  width: 50;
 }
 
 div.personnel-info {
   display: flex;
   flex-direction: row;
-  border: solid 5px #421b1b;
   /*padding: 10%; */
 }
 
@@ -1035,18 +1033,40 @@ div.detail-view-wrapper {
 }
 
 div.groupInfo {
-  flex-basis: 25%;
-  
+  flex-basis: 50%;
+  height: auto;
   display: flex;
   flex-direction: row;
-  padding: 2%;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  
+  align-items: center; 
+  padding: 2%;
+  gap: 10px; 
+}
+
+.dvcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.topImage {
+  order: 1;
+  margin: 40px;
+  margin-top: 20px;
 }
 
 div.topImage img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.numSeeking {
+  padding: 20px;
 }
 
 div.topImage {
@@ -1070,6 +1090,7 @@ body.detailView {
 
 
 
+
 /* CSS for medium viewport (might not use) */
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .onCampusPosts, .offCampusPosts {
@@ -1078,6 +1099,130 @@ body.detailView {
     justify-content: space-around;
     align-items: center;
   }
+  /* DetailView styling below (applied in renderDetailView.js) */
+
+div.datesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.timeline h2 {
+  text-align: center;
+}
+
+div.timeline {
+  border-top: solid 5px #421b1b;
+}
+
+div.personnel-info div.numSeeking p {
+  text-align: center;
+}
+
+div.personnel-info div.numSeeking h2 {
+  padding: 5%;
+}
+
+div.personnel-info div.numSeeking {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.personnel-info div.current-members p {
+  padding: 2%;
+}
+
+div.personnel-info div.current-members {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+div.personnel-info div h2 { /*Children of personnel-info div */
+  /*padding: 10%;*/
+  /* border: solid 1px red; */
+  margin: 2%;
+  text-align: center;
+}
+
+div.personnel-info div { /*Children of personnel-info div */
+  /*padding: 10%;*/
+  margin: 2%;
+  width: 50;
+}
+
+div.personnel-info {
+  display: flex;
+  flex-direction: row;
+  /*padding: 10%; */
+}
+
+div.detail-view-wrapper.address-expense {
+  padding: 2%;
+}
+
+div.detail-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: solid 5px #421b1b; 
+  margin: 2%;
+  /*padding: 10%;*/
+  justify-content: space-evenly;
+}
+
+div.groupInfo {
+  flex-basis: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  padding: 2%;
+  gap: 10px; 
+}
+
+.dvcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.topImage img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.numSeeking {
+  padding: 20px;
+}
+
+div.topImage {
+  flex-basis: 25%;
+  margin-top: 5%;
+}
+
+body.detailView h2 {
+  /*border: 1px solid red;*/
+  flex-basis: 25%;
+}
+body.detailView {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+  /*padding: 10%;*/
+}
 }
 
 /* CSS for large viewport */
@@ -1146,4 +1291,128 @@ body.detailView {
   form div {
     margin-bottom: 2rem;
   }
+  /* DetailView styling below (applied in renderDetailView.js) */
+
+div.datesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.timeline h2 {
+  text-align: center;
+}
+
+div.timeline {
+  border-top: solid 5px #421b1b;
+}
+
+div.personnel-info div.numSeeking p {
+  text-align: center;
+}
+
+div.personnel-info div.numSeeking h2 {
+  padding: 5%;
+}
+
+div.personnel-info div.numSeeking {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.personnel-info div.current-members p {
+  padding: 2%;
+}
+
+div.personnel-info div.current-members {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+div.personnel-info div h2 { /*Children of personnel-info div */
+  /*padding: 10%;*/
+  /* border: solid 1px red; */
+  margin: 2%;
+  text-align: center;
+}
+
+div.personnel-info div { /*Children of personnel-info div */
+  /*padding: 10%;*/
+  margin: 2%;
+  width: 50;
+}
+
+div.personnel-info {
+  display: flex;
+  flex-direction: row;
+  /*padding: 10%; */
+}
+
+div.detail-view-wrapper.address-expense {
+  padding: 2%;
+}
+
+div.detail-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: solid 5px #421b1b; 
+  margin: 2%;
+  /*padding: 10%;*/
+  justify-content: space-evenly;
+}
+
+div.groupInfo {
+  flex-basis: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  padding: 2%;
+  gap: 10px; 
+}
+
+.dvcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.topImage img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.numSeeking {
+  padding: 20px;
+}
+
+div.topImage {
+  flex-basis: 25%;
+  margin-top: 5%;
+}
+
+body.detailView h2 {
+  /*border: 1px solid red;*/
+  flex-basis: 25%;
+}
+body.detailView {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+  /*padding: 10%;*/
+}
 }
