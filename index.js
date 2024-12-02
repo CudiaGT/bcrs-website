@@ -1,4 +1,3 @@
-
 import renderMainPage, {getFormData} from "./main.js";
 import renderPosts from "./src/components/renderPosts.js";
 import DetailView from "./src/components/DetailView/DetailView.js"
@@ -39,7 +38,7 @@ fetch("db.JSON")
         } 
 
         else if(page == "signin") {
-            renderSign();
+            renderSignInPage();
         }
  
         else if(page == "signup") {

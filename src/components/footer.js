@@ -1,8 +1,7 @@
 export function renderFooter() {
-    const footer = document.createElement("footer");
-    footer.innerHTML = `
+    return `
     <div class="footer-quote">
-    <p>"The best thing about having a roommate is always having someone to blame when food goes missing." - Anonymous BC Student</p>
+    <p>"The best thing about having a roommate is always having someone to blame when food goes missing." - Anonymous BC Senior</p>
   </div>
   <div class="footer-details">
     <div class="footer-column">
@@ -30,6 +29,5 @@ export function renderFooter() {
   </div>
   <div class="footer-bottom">
     <p>&copy; 2024 Boston College Roomate Search. All rights reserved.</p>
-  </div>`;
-  document.querySelector("body").appendChild(footer);
-}
+  </div>`
+  ;}

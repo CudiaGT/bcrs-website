@@ -1,9 +1,18 @@
+import { renderNavBar, toggleMenu } from "./navbar.js";
+import { renderFooter } from "./footer.js";
+
 export function renderSignUpPage() {
   const body = document.querySelector("body");
   const signup = document.createElement("section");
   signup.classList = "signup-container";
   signup.innerHTML = signUpPageConstructor();
   body.append(signup);
+  const header = document.createElement("header");
+  header.innerHTML = renderNavBar();
+  body.prepend(header);
+  const footer = document.createElement("footer");
+  footer.innerHTML = renderFooter();
+  body.append(footer);
 }
 
 window.signUpPageConstructor = signUpPageConstructor;

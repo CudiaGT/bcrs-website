@@ -29,8 +29,7 @@ export default function renderMainPage(data) {
     
     //add header to existing body
     body.appendChild(header);
-    let head = document.querySelector("head");
-    head.append(toggleMenu());
+    
 
     //render landing splash of home page
     let landing_Splash = document.createElement("div");
@@ -64,6 +63,7 @@ export default function renderMainPage(data) {
 
 //Rendering Lucas' part 
     let about_wrapper = document.createElement("div");
+
     about_wrapper.classList.add("aboutUs");
     about_wrapper.innerHTML = `
                 <h2 class="section-title"><span class="keyword">Mission</span></h2>
@@ -87,7 +87,9 @@ export default function renderMainPage(data) {
     body.appendChild(form_wrapper);
 
     //Rendering Footer
-    renderFooter();
+    const footer = document.createElement("footer");
+    footer.innerHTML = renderFooter();
+    document.querySelector("body").appendChild(footer);
 
     //add event listener to check if listing location has been selected. If so render
     //second form
