@@ -299,6 +299,10 @@ nav .menu-icon {
   padding: 1rem;
 }
 
+#post h2 {
+  font-weight: 300;
+}
+
 form div {
   margin-bottom: 1.5rem;
   display: flex;
