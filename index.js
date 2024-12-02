@@ -1,8 +1,8 @@
 import renderMainPage, {getFormData} from "./main.js";
 import renderPosts from "./src/components/renderPosts.js";
 import DetailView from "./src/components/DetailView/DetailView.js"
-import renderListings from "./src/components/Listings/Listings.js";
-import {renderAbout} from "./src/components/about.js";
+import { renderListings } from "./src/components/Listings/Listings.js";
+import { renderAbout } from "./src/components/about.js";
 import { renderNavBar } from "./src/components/navbar.js";
 import { renderFooter } from "./src/components/footer.js";
 import { renderSignInPage } from "./src/components/signin.js";
