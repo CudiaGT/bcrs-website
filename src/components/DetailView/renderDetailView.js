@@ -23,7 +23,7 @@ function renderDetailViewPost(matchingListing) {
       <div class = "detail-view-wrapper">
         <div class = "personnel-info">
           <div class = "current-members">
-            <h2> Current Members:</h2>
+            <h2>Group:</h2>
             ${getCurrentMembersMarkup(matchingListing)}
           </div>
           <div class = "numSeeking">
