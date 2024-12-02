@@ -21,15 +21,8 @@ fetch("db.JSON")
         const urlParams = new URLSearchParams(window.location.search);
         const page = urlParams.get("page");
 
-        //get values of URL parameters
-        //returns null if values don't exist yet
-        const listingsParamValue = urlParams.get("listings");
-        console.log("listings Param:", listingsParamValue);
-
         const DetailViewParamValue = urlParams.get("detailView")
         console.log("DetailView Param: ", DetailViewParamValue);
-        
-        const page = listingsParamValue == null ? "home" : "listings";
 
         if (DetailViewParamValue == "true") {
             //pass renderDetailView the data from the card that triggered the click event 
