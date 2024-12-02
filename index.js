@@ -41,7 +41,7 @@ fetch("db.JSON")
         else if (page == "detailView") {
             DetailView(data);
         }
-  
+            
         else { //if page == null just render home page
             renderMainPage(data);
             renderPosts(data);
