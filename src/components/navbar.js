@@ -16,11 +16,11 @@ export function renderNavBar() {
       onclick="toggleMenu()"
   />
   <h2 class="BCRS">
-    <a href = "index.html#gassonHall"><span class="goldLogo">BC</span><span class="whiteLogo">RS</span></a>
+    <a href = "index.html#gassonhall"><span class="goldLogo">BC</span><span class="whiteLogo">RS</span></a>
   </h2>
   <div class="links">
-  <p><a href="#gassonhall">Home</a></p>
-  <p><a href="#landing-splash">Listings</a></p>
+  <p><a href="index.html#gassonhall">Home</a></p>
+  <p><a href="?page=listings">Listings</a></p>
   <p><a href="?page=about">About</a></p>
   <p>
     <a
