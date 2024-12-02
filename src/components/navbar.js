@@ -19,8 +19,8 @@ export function renderNavBar() {
     <a href = "index.html#gassonHall"><span class="goldLogo">BC</span><span class="whiteLogo">RS</span></a>
   </h2>
   <div class="links">
-  <p><a href="?page=home">Home</a></p>
-  <p><a href="?page=listings">Listings</a></p>
+  <p><a href="#gassonhall">Home</a></p>
+  <p><a href="#landing-splash">Listings</a></p>
   <p><a href="?page=about">About</a></p>
   <p>
     <a
