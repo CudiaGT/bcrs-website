@@ -21,27 +21,20 @@ fetch("db.JSON")
         const urlParams = new URLSearchParams(window.location.search);
         const page = urlParams.get("page");
 
-        //get values of URL parameters
-        //returns null if values don't exist yet
-        const listingsParamValue = urlParams.get("listings");
-        console.log("listings Param:", listingsParamValue);
+        // const DetailViewParamValue = urlParams.get("detailView")
+        // console.log("DetailView Param: ", DetailViewParamValue);
 
-        const DetailViewParamValue = urlParams.get("detailView")
-        console.log("DetailView Param: ", DetailViewParamValue);
-        
-        const page = listingsParamValue == null ? "home" : "listings";
+        // if (DetailViewParamValue == "true") {
+        //     //pass renderDetailView the data from the card that triggered the click event 
+        //     DetailView(data);
 
-        if (DetailViewParamValue == "true") {
-            //pass renderDetailView the data from the card that triggered the click event 
-            DetailView(data);
-
-        } else if (listingsParamValue == "true") {
-            //collect updated form data
-            let [payload, listingLocation] = getFormData();
-            //need a new renderListings function that workes with payload data
-            renderListings(listingLocation, payload, data);
-        }
-        else if (page == "about") {
+        // } else if (listingsParamValue == "true") {
+        //     //collect updated form data
+        //     let [payload, listingLocation] = getFormData();
+        //     //need a new renderListings function that workes with payload data
+        //     renderListings(listingLocation, payload, data);
+        // }
+        if (page == "about") {
             renderAbout();
         } 
 
