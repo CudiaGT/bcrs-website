@@ -17,7 +17,7 @@ export default function renderBottomOnCampus(p) {
     </div>
     <div class="bottomIMGcontainer">
       <div class="bottomIMG">
-        <img class="location" src="src/assets/postings/location.png"></img>
+        <img class="location" src="src/assets/postings/location.png" alt="location"></img>
         <span>${p.dorm}</span>
       </div>
       <div class="bottomIMG">

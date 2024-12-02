@@ -1,4 +1,5 @@
 import { renderNavBar } from "../../components/navbar.js";
+import { renderFooter } from "../../components/footer.js";
 
 
 function getCurrentMembersMarkup(matchingListing) {
@@ -71,10 +72,9 @@ export default function renderDetailView(matchingListing) {
     body.insertAdjacentHTML("beforeend", renderNavBar());
 
     //insert markup with the details of matchingListing at the end of the body:
-    body.insertAdjacentHTML("beforeend", renderDetailViewPost(matchingListing))
+    body.insertAdjacentHTML("beforeend", renderDetailViewPost(matchingListing));
 
-
-
-
+    body.innerHTML+= `
+    <footer>${renderFooter()}</footer>`;
 
 }

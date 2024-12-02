@@ -1,5 +1,6 @@
 import onCampusPost from "./onCampusPost.js";
 import offCampusPost from "./offCampusPost.js";
+import showMoreOffCampus from "./DetailView/showMoreOffCampus.js";
 
 export default function renderPosts(data) {
     const onCampusPostTag = document.querySelector(".onCampusPosts")
@@ -51,6 +52,7 @@ export default function renderPosts(data) {
     let offCampusPostCounter = 0;
     offCampusPostTag.innerHTML = offCampusPost(data.offcampus[offCampusPostCounter]);
     offCampusPostTag.innerHTML += offCampusPost(data.offcampus[offCampusPostCounter + 1]);
+    showMoreOffCampus();
     const leftArrowOff = document.querySelector("#offCampusLeftArrow");
     leftArrowOff.addEventListener("click", () => {
         if (offCampusPostCounter === 0) {
@@ -71,6 +73,7 @@ export default function renderPosts(data) {
         else {
             offCampusPostTag.innerHTML += offCampusPost(data.offcampus[offCampusPostCounter + 1])
         }
+        showMoreOffCampus();
     })
     const rightArrowOff = document.querySelector("#offCampusRightArrow");
     rightArrowOff.addEventListener("click", () => {
@@ -87,5 +90,6 @@ export default function renderPosts(data) {
         else {
             offCampusPostTag.innerHTML += offCampusPost(data.offcampus[offCampusPostCounter + 1])
         }
+        showMoreOffCampus();
     });
 }
