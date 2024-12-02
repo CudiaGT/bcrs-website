@@ -97,9 +97,9 @@ nav .menu-icon {
     height: auto;
   }
 
- nav .links {
+ /* nav .links {
     display: none;
-    }
+    } */
 
     nav .links.active {
       display: flex;
@@ -227,6 +227,16 @@ body.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .aboutUs {
+    display: flex !important;
+    background-color: #cd9f58 !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px 50px;
   }
   
   .image-container {

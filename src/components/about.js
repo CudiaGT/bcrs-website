@@ -1,3 +1,6 @@
+ import { renderNavBar, toggleMenu } from "./navbar.js";
+ import { renderFooter } from "./footer.js";
+
 export function renderAbout() {
 fetch("../about.json")
   .then((response) => {
@@ -8,9 +11,8 @@ fetch("../about.json")
 
     const aboutDiv = document.querySelector("body");
     aboutDiv.innerHTML = `
-
-          <header id="aboutHead">
-        
+          <header>
+            ${renderNavBar()}
           </header>
 
           <main>
@@ -67,6 +69,9 @@ fetch("../about.json")
                <a target="_blank" href="${data.varunLink}">${data.varunName}</a>
               </div>
               </div>
+              <footer>
+              ${renderFooter()}
+              </footer>
           </main>
         `;
   });
