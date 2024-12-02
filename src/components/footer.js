@@ -8,7 +8,7 @@ export function renderFooter() {
       <h4>CONTACT DETAILS</h4>
       <p><strong>Tel:</strong> +1 800-000-0000</p>
       <p><strong>Mov:</strong> +1 800-000-0000</p>
-      <p><strong>E-mail:</strong> bcrm@bc.edu</p>
+      <p><strong>E-mail:</strong> bcrs@bc.edu</p>
       <div class="social-icons">
         <a href="#"><img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/Facebook_icon_2013.svg.png?v=1732317204022" alt="Facebook"></a>
         <a href="#"><img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/Instagram_logo_2016.svg.webp?v=1732317202177" alt="Instagram"></a>
