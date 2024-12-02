@@ -20,19 +20,6 @@ fetch("db.JSON")
         const urlParams = new URLSearchParams(window.location.search);
         const page = urlParams.get("page");
 
-        // const DetailViewParamValue = urlParams.get("detailView")
-        // console.log("DetailView Param: ", DetailViewParamValue);
-
-        // if (DetailViewParamValue == "true") {
-        //     //pass renderDetailView the data from the card that triggered the click event 
-        //     DetailView(data);
-
-        // } else if (listingsParamValue == "true") {
-        //     //collect updated form data
-        //     let [payload, listingLocation] = getFormData();
-        //     //need a new renderListings function that workes with payload data
-        //     renderListings(listingLocation, payload, data);
-        // }
         if (page == "about") {
             renderAbout();
         } 
@@ -43,6 +30,16 @@ fetch("db.JSON")
  
         else if(page == "signup") {
             renderSignUpPage();
+        }
+
+        else if (page == "listings") {
+            //collect updated form data
+            let [payload, listingLocation] = getFormData();
+            renderListings(listingLocation, payload, data);
+        }
+
+        else if (page == "detailView") {
+            DetailView(data);
         }
   
         else { //if page == null just render home page

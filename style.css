@@ -1012,6 +1012,7 @@ div.personnel-info div { /*Children of personnel-info div */
   /*padding: 10%;*/
   border: solid 5px #cd9f58;
   margin: 2%;
+  width:50%;
 }
 
 div.personnel-info {
