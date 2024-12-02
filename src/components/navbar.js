@@ -20,7 +20,7 @@ export function renderNavBar() {
   </h2>
   <div class="links">
   <p><a href="?page=home">Home</a></p>
-  <p><a href="#landing-splash">Listings</a></p>
+  <p><a href="index.html#on-campus">Listings</a></p>
   <p><a href="?page=about">About</a></p>
   <p>
     <a
