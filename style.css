@@ -1054,6 +1054,7 @@ div.topImage {
   order: 1;
   margin: 40px;
   margin-top: 20px;
+  box-shadow: -3px -3px 8px #888888;
 }
 
 div.topImage img {
@@ -1061,7 +1062,7 @@ div.topImage img {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+
 }
 
 .numSeeking {
@@ -1071,6 +1072,7 @@ div.topImage img {
 div.topImage {
   flex-basis: 25%;
   margin-top: 5%;
+  box-shadow: -3px -3px 8px #888888;
 }
 
 body.detailView h2 {
@@ -1196,8 +1198,7 @@ div.topImage img {
   max-width: 500px;
   width: 100%;
   height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+  box-shadow: -4 -4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 .numSeeking {
@@ -1207,6 +1208,7 @@ div.topImage img {
 div.topImage {
   flex-basis: 25%;
   margin-top: 5%;
+  box-shadow: -3px -3px 8px #888888;
 }
 
 body.detailView h2 {
@@ -1389,7 +1391,6 @@ div.topImage img {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
 }
 
 .numSeeking {
