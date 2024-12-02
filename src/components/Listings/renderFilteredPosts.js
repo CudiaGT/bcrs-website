@@ -66,8 +66,8 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
                 //Also want to change params of url in order to render DetailView page from index.js
                 //Change URL params
                 const currentURL = new URL(window.location);
-                currentURL.searchParams.set("detailView", "true");
-                currentURL.searchParams.delete("listings");
+                currentURL.searchParams.set("page", "detailView");
+                //currentURL.searchParams.delete("listings");
                 window.location.href = currentURL;
                 console.log("New URL:", window.location.href);
             });
