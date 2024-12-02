@@ -200,7 +200,7 @@ nav .menu-icon {
   
   div.searchBar button.search {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 1%;
     background-color: #231f20;
     justify-content: space-between;
@@ -1010,7 +1010,6 @@ div.personnel-info div h2 { /*Children of personnel-info div */
 div.personnel-info div { /*Children of personnel-info div */
   /*padding: 10%;*/
   margin: 2%;
-  width: 50;
 }
 
 div.personnel-info {

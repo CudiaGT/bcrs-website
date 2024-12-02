@@ -63,6 +63,8 @@ function renderDetailViewPost(matchingListing) {
 export default function renderDetailView(matchingListing) {
     console.log("In renderDetailView.js");
 
+
+
     let body = document.querySelector("body");
 
     //render navbar for detail view page
