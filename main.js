@@ -87,7 +87,9 @@ export default function renderMainPage(data) {
     body.appendChild(form_wrapper);
 
     //Rendering Footer
-    renderFooter();
+    const footer = document.createElement("footer");
+    footer.innerHTML = renderFooter();
+    document.querySelector("body").appendChild(footer);
 
     //add event listener to check if listing location has been selected. If so render
     //second form
