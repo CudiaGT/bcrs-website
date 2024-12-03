@@ -29,15 +29,9 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
             lastChild = container.lastElementChild;
             console.log("last child: ", lastChild);
             let showMoreLink = lastChild.querySelector("a.showMoreLink");
-            //let listingLocationID = showMoreLink.getAttribute("id");
             console.log("show more link: ", showMoreLink);
 
             showMoreLink.addEventListener("click", (e) => {
-
-                //get updated id:
-                
-                let listingLocationID = showMoreLink.classList[1];
-                
                 e.preventDefault(); //Prevent navigation to link
                 //print out element that triggered event
                 console.log("Click event triggered on:", e.target);
@@ -55,14 +49,9 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
                 //Need to convert string onCampusIdentifier to int
                 let onCampusIdentifierNumeric = Number(onCampusIdentifier);
 
-            
-                console.log("onCampusIdentifier:", onCampusIdentifierNumeric);
-                console.log("listingLocation", listingLocationID)
-
+                console.log("onCampusNumeric:", onCampusIdentifierNumeric);
                 //Save identifier to local storage
                 localStorage.setItem("onCampusIdentifier", onCampusIdentifierNumeric);
-                //Save listingLocation to local storage
-                localStorage.setItem("listingLocation", listingLocationID);
 
                 //Also want to change params of url in order to render DetailView page from index.js
                 //Change URL params
@@ -87,11 +76,6 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
             console.log("show more link: ", showMoreLink);
 
             showMoreLink.addEventListener("click", (e) => {
-                
-                //get updated id:
-
-                let listingLocationID = showMoreLink.classList[1];
-
                 e.preventDefault(); //Prevent navigation to link
                 //print out element that triggered event
                 console.log("Click event triggered on:", e.target);
@@ -103,21 +87,11 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
                 //that triggered the click event
 
                 //Navigate up the DOM then down
-                console.log("div with id: ", showMoreLink.closest("div.showMore"))
-                offCampusIdentifier = showMoreLink.closest("div.showMore").getAttribute("id");
-                //Need to convert string onCampusIdentifier to int
-                let offCampusIdentifierNumeric = Number(offCampusIdentifier);
-                
-                //offCampusIdentifier = showMoreLink.closest("div.post").querySelector("div.bottomIMG span").textContent;
+                offCampusIdentifier = showMoreLink.closest("div.post").querySelector("div.bottomIMG span").textContent;
 
-                console.log("offCampusIdentifier:", offCampusIdentifierNumeric);
-                console.log("listingLocation", listingLocationID)
-
+                console.log("offCampusIdentifier:", offCampusIdentifier);
                 //Save identifier to local storage
-                localStorage.setItem("offCampusIdentifier", offCampusIdentifierNumeric);
-                //Save listingLocation to local storage
-                localStorage.setItem("listingLocation", listingLocationID);
-
+                localStorage.setItem("offCampusIdentifier", offCampusIdentifier);
 
                 //Also want to change params of url in order to render DetailView page from index.js
                 //Change URL params
@@ -142,11 +116,3 @@ export function getOnCampusIdentifier() {
     let savedOnCampusIdentifier = localStorage.getItem("onCampusIdentifier");
     return savedOnCampusIdentifier;
 }
-
-
-export function getListingLocation() {
-    let listingLocation = localStorage.getItem("listingLocation");
-    return listingLocation;
-}
-
-
