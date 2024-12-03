@@ -1,8 +1,8 @@
- import { renderNavBar, toggleMenu } from "./navbar.js";
+ import { renderNavBar } from "./navbar.js";
  import { renderFooter } from "./footer.js";
 
 export function renderAbout() {
-fetch("../about.json")
+fetch("../../about.json")
   .then((response) => {
     return response.json();
   })
