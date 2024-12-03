@@ -1,6 +1,7 @@
 {
   "oncampus": [
     {
+      "id": 0,
       "numGroup": 4,
       "numSeek": 2,
       "aim": "6-man housing",
@@ -29,6 +30,7 @@
       ]
     },
     {
+      "id": 1,
       "numGroup": 3,
       "numSeek": 1,
       "aim": "4-man housing",
@@ -53,6 +55,7 @@
       ]
     },
     {
+      "id": 2,
       "numGroup": 5,
       "numSeek": 1,
       "aim": "6-man housing",
@@ -85,6 +88,7 @@
       ]
     },
     {
+      "id": 3,
       "numGroup": 2,
       "numSeek": 2,
       "aim": "4-man housing",
@@ -105,6 +109,7 @@
       ]
     },
     {
+      "id": 4,
       "numGroup": 3,
       "numSeek": 3,
       "aim": "6-man housing",
@@ -129,6 +134,7 @@
       ]
     },
     {
+      "id": 5,
       "numGroup": 7,
       "numSeek": 1,
       "aim": "8-man housing",
@@ -169,6 +175,7 @@
       ]
     },
     {
+      "id": 6,
       "numGroup": 6,
       "numSeek": 2,
       "aim": "8-man housing",
@@ -205,6 +212,7 @@
       ]
     },
     {
+      "id": 7,
       "numGroup": 3,
       "numSeek": 2,
       "aim": "5-man housing",
@@ -229,6 +237,7 @@
       ]
     },
     {
+      "id": 8,
       "numGroup": 6,
       "numSeek": 1,
       "aim": "7-man housing",
@@ -265,6 +274,7 @@
       ]
     },
     {
+      "id": 9,
       "numGroup": 4,
       "numSeek": 4,
       "aim": "8-man housing",
@@ -293,6 +303,7 @@
       ]
     },
     {
+      "id": 10,
       "numGroup": 3,
       "numSeek": 1,
       "aim": "4-man housing",
@@ -317,6 +328,7 @@
       ]
     },
     {
+      "id": 11,
       "numGroup": 3,
       "numSeek": 1,
       "aim": "4-man housing",
@@ -341,6 +353,7 @@
       ]
     },
     {
+      "id": 12,
       "numGroup": 2,
       "numSeek": 2,
       "aim": "4-man housing",
