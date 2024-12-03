@@ -102,7 +102,7 @@ function renderDetailViewPostOnCampus(matchingListing) {
 export default function renderDetailView(matchingListing) {
     console.log("In renderDetailView.js");
 
-    let [payload, listingLocation] = getFormData();
+    let listingLocation = localStorage.getItem("listingLocation");
     console.log("listing location:", listingLocation);
 
     let body = document.querySelector("body");

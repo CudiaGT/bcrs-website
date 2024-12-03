@@ -28,6 +28,7 @@ function DetailViewOnCampus(listingLocation, data) {
 
 function DetailViewOffCampus(listingLocation, data) {
     let offCampusIdentifier = getOffCampusIdentifier(); //the address of clicked listing
+    console.log(offCampusIdentifier);
     let matchingListingArray;
     console.log("offCampusIdentifier: ", offCampusIdentifier);
 
@@ -50,8 +51,7 @@ function DetailViewOffCampus(listingLocation, data) {
 
 export default function DetailView(data) {
     console.log("In DetailView.js");
-
-    let [payload, listingLocation] = getFormData();
+    let listingLocation = localStorage.getItem("listingLocation");
     console.log("listing location:", listingLocation);
     
     if (listingLocation == "oncampus") {

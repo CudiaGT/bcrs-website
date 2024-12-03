@@ -25,7 +25,7 @@ export default function renderBottomOffCampus(p) {
         <span>${p.numGroup+p.numSeek} People</span>
       </div>
     </div>
-    <div class="showMore offCampus">
+    <div class="showMore offCampus offcampus">
         <a href="javascript:void(0)" class="showMoreLink"><span>SHOW MORE...</span></a>
     </div>
     </div>
