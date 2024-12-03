@@ -27,7 +27,8 @@
           "name": "Omar Ali",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 1,
@@ -52,7 +53,8 @@
           "name": "Noah King",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 2,
@@ -85,7 +87,8 @@
           "name": "Natalie Moore",
           "academicYear": "Freshman"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 3,
@@ -106,7 +109,8 @@
           "name": "Mason Taylor",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 4,
@@ -131,7 +135,8 @@
           "name": "Ava Thomas",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 5,
@@ -172,7 +177,8 @@
           "name": "Logan Baker",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 6,
@@ -209,7 +215,8 @@
           "name": "Jack Allen",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 7,
@@ -234,7 +241,8 @@
           "name": "Elena Carter",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 8,
@@ -271,7 +279,8 @@
           "name": "Aria Gonzalez",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 9,
@@ -300,7 +309,8 @@
           "name": "Riley Collins",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 10,
@@ -325,7 +335,8 @@
           "name": "Natalie Lopez",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 11,
@@ -350,7 +361,8 @@
           "name": "Alex Brown",
           "academicYear": "Freshman"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     },
     {
       "id": 12,
@@ -371,12 +383,14 @@
           "name": "Tom Green",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "oncampus"
     }
   ],
   
   "offcampus": [
     {
+      "id": 13, 
       "numGroup": 3,
       "numSeek": 2,
       "rent": 1000,
@@ -403,9 +417,11 @@
           "name": "Daniel Green",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 14,
       "numGroup": 2,
       "numSeek": 1,
       "rent": 1200,
@@ -428,9 +444,11 @@
           "name": "Max Taylor",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 15,
       "numGroup": 4,
       "numSeek": 3,
       "rent": 1100,
@@ -461,9 +479,11 @@
           "name": "Ethan Harris",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 16,
       "numGroup": 5,
       "numSeek": 2,
       "rent": 800,
@@ -498,9 +518,11 @@
           "name": "Grace Evans",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 17,
       "numGroup": 1,
       "numSeek": 1,
       "rent": 1200,
@@ -519,9 +541,11 @@
           "name": "Henry Adams",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 18,
       "numGroup": 6,
       "numSeek": 3,
       "rent": 950,
@@ -560,9 +584,11 @@
           "name": "Julia Torres",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 19,
       "numGroup": 3,
       "numSeek": 1,
       "rent": 750,
@@ -589,9 +615,11 @@
           "name": "Alex Jones",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 20,
       "numGroup": 4,
       "numSeek": 1,
       "rent": 1000,
@@ -622,9 +650,11 @@
           "name": "Brandon Hall",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 21,
       "numGroup": 5,
       "numSeek": 4,
       "rent": 800,
@@ -659,9 +689,11 @@
           "name": "Nora King",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 22,
       "numGroup": 2,
       "numSeek": 1,
       "rent": 1300,
@@ -684,9 +716,11 @@
           "name": "Samantha Evans",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 23,
       "numGroup": 4,
       "numSeek": 4,
       "rent": 1100,
@@ -717,9 +751,11 @@
           "name": "Olivia King",
           "academicYear": "Sophomore"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 24,
       "numGroup": 6,
       "numSeek": 2,
       "rent": 900,
@@ -758,9 +794,11 @@
           "name": "Stella Miller",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 25,
       "numGroup": 3,
       "numSeek": 3,
       "rent": 750,
@@ -787,9 +825,11 @@
           "name": "Mason Diaz",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 26,
       "numGroup": 2,
       "numSeek": 1,
       "rent": 1000,
@@ -812,9 +852,11 @@
           "name": "Sophie Williams",
           "academicYear": "Junior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     },
     {
+      "id": 27,
       "numGroup": 1,
       "numSeek": 1,
       "rent": 1300,
@@ -833,7 +875,8 @@
           "name": "Samuel Smith",
           "academicYear": "Senior"
         }
-      ]
+      ],
+      "listingLocation" : "offcampus"
     }
   ]
 }
