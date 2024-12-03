@@ -2,7 +2,7 @@ export function renderOnCampusForm() {
     return `
     <form
                   method="post"
-                  action="http://www.randyconnolly.com/tests/process.php"
+                  action=""
                   class = "search field"
                 >
                   <fieldset>

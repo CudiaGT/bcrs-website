@@ -26,7 +26,7 @@ export default function renderBottomOnCampus(p) {
       </div>
     </div>
     <div class="showMore onCampus" id="${p.id}">
-        <a href="javascript:void(0)" class="showMoreLink"><span>SHOW MORE...</span></a>
+        <a href="javascript:void(0)" class="showMoreLink ${p.listingLocation}"><span>SHOW MORE...</span></a>
     </div>
     </div>
     `;

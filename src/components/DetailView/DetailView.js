@@ -1,4 +1,4 @@
-import { getOffCampusIdentifier, getOnCampusIdentifier } from "../Listings/renderFilteredPosts.js";
+import { getListingLocation, getOffCampusIdentifier, getOnCampusIdentifier } from "../Listings/renderFilteredPosts.js";
 import {getFormData} from "../../../main.js";
 import renderDetailView from "./renderDetailView.js";
 
@@ -6,7 +6,7 @@ import renderDetailView from "./renderDetailView.js";
 
 
 function DetailViewOnCampus(listingLocation, data) {
-    let onCampusIdentifier = getOnCampusIdentifier(); //the ID of clicked listing
+    let onCampusIdentifier = getOnCampusIdentifier(); //the ID of clicked listing 4
     let matchingListingArray;
     console.log("onCampusIdentifier: ", onCampusIdentifier);
 
@@ -33,7 +33,7 @@ function DetailViewOffCampus(listingLocation, data) {
 
     if (listingLocation && data[listingLocation]) {
         matchingListingArray = data[listingLocation].filter(group => 
-        group.address == offCampusIdentifier
+        group.id == offCampusIdentifier
         );
     }   
     //matchingListingArray contains the singular matching listing
@@ -51,7 +51,8 @@ function DetailViewOffCampus(listingLocation, data) {
 export default function DetailView(data) {
     console.log("In DetailView.js");
 
-    let [payload, listingLocation] = getFormData();
+    //let [payload, listingLocation] = getFormData();
+    let listingLocation = getListingLocation();
     console.log("listing location:", listingLocation);
     
     if (listingLocation == "oncampus") {

@@ -1,5 +1,6 @@
 import { renderNavBar } from "../../components/navbar.js";
 import { renderFooter } from "../../components/footer.js";
+import { getListingLocation } from "../Listings/renderFilteredPosts.js";
 import { getFormData } from "../../../main.js";
 
 
@@ -102,7 +103,7 @@ function renderDetailViewPostOnCampus(matchingListing) {
 export default function renderDetailView(matchingListing) {
     console.log("In renderDetailView.js");
 
-    let [payload, listingLocation] = getFormData();
+    let listingLocation = getListingLocation();
     console.log("listing location:", listingLocation);
 
     let body = document.querySelector("body");
