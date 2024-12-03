@@ -22,16 +22,46 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
     let lastChild;
     if (listingLocation == "oncampus") {
         for(let listing of filteredListings) {
-            //add listing to body html
             console.log("Rendering listing: ", listing);
-            container.innerHTML += renderOnCampusPost(listing);
-            //attach event listener to post that checks if SHOW MORE Link has been clicked
-            lastChild = body.lastElementChild;
-            console.log("last child:", lastChild);
+            container.insertAdjacentHTML("beforeend", renderOnCampusPost(listing));
+            
+            //attach event listener to anchor tag within post that checks if SHOW MORE Link has been clicked
+            lastChild = container.lastElementChild;
+            console.log("last child: ", lastChild);
+            let showMoreLink = lastChild.querySelector("a.showMoreLink");
+            console.log("show more link: ", showMoreLink);
 
-            //TO-DO:
-            //Create link and onCampusIdentifier for filtered onCampus results
-            //Right now the showMoreLinks for the onCampus results don't navigate any where
+            showMoreLink.addEventListener("click", (e) => {
+                e.preventDefault(); //Prevent navigation to link
+                //print out element that triggered event
+                console.log("Click event triggered on:", e.target);
+                console.log("Default prevented");
+
+                //when showMoreLink on a card is clicked
+                //we want to save any specific info (ie. address, id) from the card
+                //Ensures that we're always getting the address of the post with the a tag
+                //that triggered the click event
+
+                //For oncampus we want to find the specific id of the post which will be the id value of the div with class "showMore onCampus"
+                //Navigate up the DOM then down
+                console.log("div with id: ", showMoreLink.closest("div.showMore"))
+                onCampusIdentifier = showMoreLink.closest("div.showMore").getAttribute("id");
+                //Need to convert string onCampusIdentifier to int
+                let onCampusIdentifierNumeric = Number(onCampusIdentifier);
+
+                console.log("onCampusNumeric:", onCampusIdentifierNumeric);
+                //Save identifier to local storage
+                localStorage.setItem("onCampusIdentifier", onCampusIdentifierNumeric);
+
+                //Also want to change params of url in order to render DetailView page from index.js
+                //Change URL params
+                const currentURL = new URL(window.location);
+                currentURL.searchParams.set("page", "detailView");
+                //currentURL.searchParams.delete("listings");
+                window.location.href = currentURL;
+                console.log("New URL:", window.location.href);
+            });
+        
         }
     }
     else if (listingLocation == "offcampus") {
@@ -79,4 +109,10 @@ export default function renderFilteredPosts(filteredListings, listingLocation) {
 export function getOffCampusIdentifier() {
     let savedOffCampusIdentifier = localStorage.getItem("offCampusIdentifier");
     return savedOffCampusIdentifier;
+}
+
+
+export function getOnCampusIdentifier() {
+    let savedOnCampusIdentifier = localStorage.getItem("onCampusIdentifier");
+    return savedOnCampusIdentifier;
 }
