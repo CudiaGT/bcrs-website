@@ -2,7 +2,7 @@
  import { renderFooter } from "./footer.js";
 
 export function renderAbout() {
-fetch("../../about.json")
+fetch("https://cudiagt.github.io/bcrs-website/about.json")
   .then((response) => {
     return response.json();
   })
