@@ -49,6 +49,7 @@ export default function renderMainPage(data) {
     body.appendChild(landing_Splash);
 
 
+
     //Rendering Andy's part
     let onCampus_wrapper = document.createElement("div");
     onCampus_wrapper.id = "on-campus";
