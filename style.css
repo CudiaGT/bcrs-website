@@ -3,16 +3,98 @@
   font-family: "Lexend", sans-serif;
 }
 
+body {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+
+  h2.BCRS {
+    white-space: nowrap !important;
+  }
+  nav .links p {
+    overflow: visible;
+  }
+
+  nav .links {
+    gap: 0.3rem !important;
+  }
+
+  nav p a {
+    white-space: nowrap !important;
+    font-size: 0.6rem !important;
+  }
+
+  nav div.signin {
+    overflow: visible;
+    gap: 0.3rem !important; 
+    padding: 0.3rem 0.8rem !important; 
+  }
+
+  nav div.signin img {
+    width: 0.8rem !important; 
+    height: auto !important;
+  }
+
+  nav div.signin a {
+    font-size: 0.8rem !important;
+  }
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1115px) {
+  
+  h2.BCRS {
+    white-space: nowrap !important;
+  }
+  nav .links p {
+    overflow: visible;
+  }
+
+  nav .links {
+    gap: 0.3rem !important;
+  }
+
+  nav p a {
+    white-space: nowrap !important;
+    font-size: 0.8rem !important;
+  }
+
+  nav div.signin {
+    overflow: visible;
+    gap: 0.3rem !important; 
+    padding: 0.3rem 0.8rem !important; 
+  }
+
+  nav div.signin img {
+    width: 1rem !important; 
+    height: auto !important;
+  }
+
+  nav div.signin a {
+    font-size: 0.8rem !important;
+  }
+
+  }
+
 nav a {
   text-decoration: none;
 }
 
 nav {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
   display: flex;
   justify-content: space-between; 
   align-items: center;
   background-color: #421b1b; 
   padding: 0.5rem 2rem; 
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional for style */
+  overflow: visible; 
 }
 
 h2.BCRS {
@@ -60,6 +142,7 @@ nav div.signin {
   background-color: #231F20;
   padding: 0.5rem 1rem; 
   border-radius: 0.5rem;
+  margin-top: 0 !important;
 }
 
 .signin img {
@@ -108,8 +191,9 @@ nav .menu-icon {
       background-color: #421b1b; 
       padding-bottom: 1rem;
       padding-top: 1rem;
-      top: 7%;
+      top: 100%;
       left: 0;
+      z-index: 1001; /* Adjust as needed to ensure visibility */
     }
   }
   
@@ -299,6 +383,10 @@ nav .menu-icon {
   padding: 1rem;
 }
 
+#post h2 {
+  font-weight: 300;
+}
+
 form div {
   margin-bottom: 1.5rem;
   display: flex;
@@ -409,7 +497,6 @@ form div {
   p.imgResBottom {
     margin-top: 10%;
     width: 70%; /* Set width to 50% of its parent container */
-    height: 200px;
     text-align: left;
     text-indent: 30px;
     color: white;
@@ -425,7 +512,7 @@ form div {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 650px;
+    height: 500px;
     background-color: #852221;
   }
   
@@ -435,7 +522,7 @@ form div {
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    height: 1050px;
+    height: auto;
     background-color: #cd9f58;
   }
   
@@ -449,6 +536,7 @@ form div {
   
   div.services img {
     width: 100vw;
+    height: auto;
   }
   
   div.image-container2 .section-title-about {
@@ -482,7 +570,8 @@ form div {
   }
   
   .servicesExplanation {
-    margin-top: 10%;
+    margin-top: 70px;
+    margin-bottom: 70px;
     text-align: left;
     text-indent: 30px;
     color: white;
@@ -497,6 +586,20 @@ form div {
   }
   .mission img {
     width: 100vw;
+  }
+
+  @media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .mission {
+      height: 300px;         /* Set fixed height for cropping */
+      overflow: hidden;      /* Hide the overflowing parts of the image */
+    }
+  
+    .mission img {
+      width: 100%;          /* Ensure full width of the container */
+      height: 100%;         /* Scale the image to fill the container */
+      object-fit: cover;    /* Crop the image while maintaining its aspect ratio */
+      object-position: center top; /* Crop focusing on the top (optional) */
+    }
   }
   
   .mission p {
@@ -519,10 +622,16 @@ form div {
   
   .team {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #cd9f58;
+  }
+
+  .teamMembers {
+    display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #cd9f58;
   }
   
   .teamMember {
@@ -558,6 +667,8 @@ form div {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .footer-details {
@@ -957,12 +1068,11 @@ footer {
 }
 
 
-/*DetailView styling below (applied in renderDetailView.js)*/
+/* DetailView styling below (applied in renderDetailView.js) */
 
 div.datesWrapper {
   display: flex;
-  flex-direction: row;
-  border: solid 3px #cd9f58;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -971,7 +1081,7 @@ div.timeline h2 {
 }
 
 div.timeline {
-  border: solid 5px #421b1b;
+  border-top: solid 5px #421b1b;
 }
 
 div.personnel-info div.numSeeking p {
@@ -1010,14 +1120,12 @@ div.personnel-info div h2 { /*Children of personnel-info div */
 
 div.personnel-info div { /*Children of personnel-info div */
   /*padding: 10%;*/
-  border: solid 5px #cd9f58;
   margin: 2%;
 }
 
 div.personnel-info {
   display: flex;
   flex-direction: row;
-  border: solid 5px #421b1b;
   /*padding: 10%; */
 }
 
@@ -1035,23 +1143,47 @@ div.detail-view-wrapper {
 }
 
 div.groupInfo {
-  flex-basis: 25%;
-  
+  flex-basis: 50%;
+  height: auto;
   display: flex;
   flex-direction: row;
-  padding: 2%;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
-  
+  align-items: center; 
+  padding: 2%;
+  gap: 10px; 
+}
+
+.dvcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.topImage {
+  order: 1;
+  margin: 40px;
+  margin-top: 20px;
+  box-shadow: -3px -3px 8px #888888;
 }
 
 div.topImage img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+
+}
+
+.numSeeking {
+  padding: 20px;
 }
 
 div.topImage {
   flex-basis: 25%;
   margin-top: 5%;
+  box-shadow: -3px -3px 8px #888888;
 }
 
 body.detailView h2 {
@@ -1067,6 +1199,7 @@ body.detailView {
   
   /*padding: 10%;*/
 }
+
 
 
 
@@ -1146,4 +1279,127 @@ body.detailView {
   form div {
     margin-bottom: 2rem;
   }
+  /* DetailView styling below (applied in renderDetailView.js) */
+
+div.datesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div.timeline h2 {
+  text-align: center;
+}
+
+div.timeline {
+  border-top: solid 5px #421b1b;
+}
+
+div.personnel-info div.numSeeking p {
+  text-align: center;
+}
+
+div.personnel-info div.numSeeking h2 {
+  padding: 5%;
+}
+
+div.personnel-info div.numSeeking {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+div.personnel-info div.current-members p {
+  padding: 2%;
+}
+
+div.personnel-info div.current-members {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+div.personnel-info div h2 { /*Children of personnel-info div */
+  /*padding: 10%;*/
+  /* border: solid 1px red; */
+  margin: 2%;
+  text-align: center;
+}
+
+div.personnel-info div { /*Children of personnel-info div */
+  /*padding: 10%;*/
+  margin: 2%;
+  width: 50;
+}
+
+div.personnel-info {
+  display: flex;
+  flex-direction: row;
+  /*padding: 10%; */
+}
+
+div.detail-view-wrapper.address-expense {
+  padding: 2%;
+}
+
+div.detail-view-wrapper {
+  display: flex;
+  flex-direction: column;
+  border: solid 5px #421b1b; 
+  margin: 2%;
+  /*padding: 10%;*/
+  justify-content: space-evenly;
+}
+
+div.groupInfo {
+  flex-basis: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  padding: 2%;
+  gap: 10px; 
+}
+
+.dvcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.topImage img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.numSeeking {
+  padding: 20px;
+}
+
+div.topImage {
+  flex-basis: 25%;
+  margin-top: 5%;
+}
+
+body.detailView h2 {
+  /*border: 1px solid red;*/
+  flex-basis: 25%;
+}
+body.detailView {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+  /*padding: 10%;*/
+}
 }
