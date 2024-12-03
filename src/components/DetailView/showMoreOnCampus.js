@@ -21,6 +21,8 @@ export default function showMoreOnCampus() {
             onCampusIdentifier = link.id;
             //Need to convert string onCampusIdentifier to int
             let onCampusIdentifierNumeric = Number(onCampusIdentifier);
+            localStorage.setItem("listingLocation", link.classList[2])
+            console.log(localStorage["listingLocation"]);
 
             console.log("onCampusNumeric:", onCampusIdentifierNumeric);
             //Save identifier to local storage
