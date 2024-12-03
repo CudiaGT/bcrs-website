@@ -3,16 +3,100 @@
   font-family: "Lexend", sans-serif;
 }
 
+body {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+
+  h2.BCRS {
+    white-space: nowrap !important;
+    font-size: 1.2rem !important;
+  }
+  nav .links p {
+    overflow: visible;
+  }
+
+  nav .links {
+    gap: 0.3rem !important;
+  }
+
+  nav p a {
+    white-space: nowrap !important;
+    font-size: 0.6rem !important;
+  }
+
+  nav div.signin {
+    overflow: visible;
+    gap: 0.3rem !important; 
+    padding: 0.3rem 0.8rem !important; 
+  }
+
+  nav div.signin img {
+    width: 0.8rem !important; 
+    height: auto !important;
+  }
+
+  nav div.signin a {
+    font-size: 0.8rem !important;
+  }
+
+}
+
+@media screen and (min-width: 901px) and (max-width: 1115px) {
+  
+  h2.BCRS {
+    white-space: nowrap !important;
+    font-size: 1.2rem !important;
+  }
+  nav .links p {
+    overflow: visible;
+  }
+
+  nav .links {
+    gap: 0.3rem !important;
+  }
+
+  nav p a {
+    white-space: nowrap !important;
+    font-size: 0.8rem !important;
+  }
+
+  nav div.signin {
+    overflow: visible;
+    gap: 0.3rem !important; 
+    padding: 0.3rem 0.8rem !important; 
+  }
+
+  nav div.signin img {
+    width: 1rem !important; 
+    height: auto !important;
+  }
+
+  nav div.signin a {
+    font-size: 0.8rem !important;
+  }
+
+  }
+
 nav a {
   text-decoration: none;
 }
 
 nav {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
   display: flex;
   justify-content: space-between; 
   align-items: center;
   background-color: #421b1b; 
   padding: 0.5rem 2rem; 
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional for style */
+  overflow: visible; 
 }
 
 h2.BCRS {
@@ -60,6 +144,7 @@ nav div.signin {
   background-color: #231F20;
   padding: 0.5rem 1rem; 
   border-radius: 0.5rem;
+  margin-top: 0 !important;
 }
 
 .signin img {
@@ -108,8 +193,9 @@ nav .menu-icon {
       background-color: #421b1b; 
       padding-bottom: 1rem;
       padding-top: 1rem;
-      top: 7%;
+      top: 100%;
       left: 0;
+      z-index: 1001; /* Adjust as needed to ensure visibility */
     }
   }
   
@@ -413,7 +499,6 @@ form div {
   p.imgResBottom {
     margin-top: 10%;
     width: 70%; /* Set width to 50% of its parent container */
-    height: 200px;
     text-align: left;
     text-indent: 30px;
     color: white;
@@ -429,7 +514,7 @@ form div {
     display: flex;
     justify-content: center;
     width: 100vw;
-    height: 650px;
+    height: 500px;
     background-color: #852221;
   }
   
@@ -439,7 +524,7 @@ form div {
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    height: 1050px;
+    height: auto;
     background-color: #cd9f58;
   }
   
@@ -453,6 +538,7 @@ form div {
   
   div.services img {
     width: 100vw;
+    height: auto;
   }
   
   div.image-container2 .section-title-about {
@@ -486,7 +572,8 @@ form div {
   }
   
   .servicesExplanation {
-    margin-top: 10%;
+    margin-top: 70px;
+    margin-bottom: 70px;
     text-align: left;
     text-indent: 30px;
     color: white;
@@ -501,6 +588,20 @@ form div {
   }
   .mission img {
     width: 100vw;
+  }
+
+  @media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .mission {
+      height: 300px;         /* Set fixed height for cropping */
+      overflow: hidden;      /* Hide the overflowing parts of the image */
+    }
+  
+    .mission img {
+      width: 100%;          /* Ensure full width of the container */
+      height: 100%;         /* Scale the image to fill the container */
+      object-fit: cover;    /* Crop the image while maintaining its aspect ratio */
+      object-position: center top; /* Crop focusing on the top (optional) */
+    }
   }
   
   .mission p {
@@ -523,10 +624,16 @@ form div {
   
   .team {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #cd9f58;
+  }
+
+  .teamMembers {
+    display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #cd9f58;
   }
   
   .teamMember {
@@ -562,6 +669,8 @@ form div {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .footer-details {
