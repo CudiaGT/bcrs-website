@@ -155,44 +155,12 @@ export default function renderMainPage(data) {
 
         // Modify the URL and navigate
         const currentURL = new URL(window.location);
-        currentURL.searchParams.set("listings", "true");
-        currentURL.searchParams.delete("detailView");
+        currentURL.searchParams.set("page", "listings");
+        //currentURL.searchParams.delete("detailView");
         window.location.href = currentURL; //everytime window.location.href changes, index.js is rerun
         console.log("New URL:", window.location.href);
       }
     });
-
-
-    //Add event listener to see if showMoreLink of offcampus posting is clicked. If so, navigate to detailView page
-    //grab all offCampusCardLinks
-    //TO-DO: For some reason the offCampusCardLinks ("Show More") aren't being selected. Need to fix this.
-    /*let offCampusCardLinks = document.querySelectorAll("#off-campus a.showMoreLink");
-    let offCampusIdentifier;
-    console.log(offCampusCardLinks);
-
-    for (let link of offCampusCardLinks) {
-      link.addEventListener("click", (e) => {
-        e.preventDefault(); //Prevent navigation to link
-                //print out element that triggered event
-                console.log("Click event triggered on:", e.target);
-                console.log("Default prevented");
-
-                //when showMoreLink on a card is clicked
-                //we want to save any specific info (ie. address) from the card
-                offCampusIdentifier = lastChild.querySelector("div.bottomIMG span").textContent; //returns a string
-                console.log("offCampusIdentifier:", offCampusIdentifier);
-                //Save identifier to local storage
-                localStorage.setItem("offCampusIdentifier", offCampusIdentifier);
-
-                //Also want to change params of url in order to render DetailView page from index.js
-                //Change URL params
-                const currentURL = new URL(window.location);
-                currentURL.searchParams.set("detailView", "true");
-                currentURL.searchParams.delete("listings");
-                window.location.href = currentURL;
-                console.log("New URL:", window.location.href);
-      })
-    }*/
   }
 
   //When invoked, gets updated form data from localStorage

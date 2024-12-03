@@ -4,6 +4,7 @@ export default function renderForm() {
     const dateField = document.querySelector(".form-date");
     const addressField = document.querySelector(".form-address");
     const dormField = document.querySelector(".form-dorm select");
+    const dormLabel = document.querySelector(".form-dorm");
     const rentField = document.querySelector(".form-rent");
     const utilitiesField = document.querySelector(".form-utilities");
 
@@ -16,7 +17,8 @@ export default function renderForm() {
         dateField.style.display = "flex";
         addressField.style.display = "flex";
         dormField.style.display = "none";
-        rentField.style.display = "flex";
+        dormLabel.style.display = "none";
+        rentField.style.display = "flex"; 
         utilitiesField.style.display = "flex";
       }
       // on-campus categories (show - dorm | hide - dates, address, rent, utilities)
@@ -24,6 +26,7 @@ export default function renderForm() {
         dateField.style.display = "none";
         addressField.style.display = "none";
         dormField.style.display = "flex";
+        dormLabel.style.display = "flex";
         rentField.style.display = "none";
         utilitiesField.style.display = "none";
       }
@@ -85,8 +88,8 @@ export default function renderForm() {
       // images are replaced with placeholders (would lead to appropriate path with actual backend)
       const numSeek = parseInt(document.getElementById("looking-for").value);
       const image = {
-        src: "actual/image/link.jpg",
-        alt: "actual image name"
+        src: "path/to/database.jpg",
+        alt: "alt for database img"
       };
 
       // parse data appropriately based on location (on-campus vs. off-campus)

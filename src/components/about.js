@@ -52,6 +52,7 @@ fetch("src/components/about.json")
               
               <div class="team">
               <p class="section-title-about">Meet the Team</p>
+              <div class="teamMembers">
               <div class="teamMember">
               <img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/Screenshot%202024-11-22%20at%205.34.51%E2%80%AFPM.png?v=1732315382208" alt="Harim"/>
               <a target="_blank" href="${data.harimLink}">${data.harimName}</a> 
@@ -67,6 +68,7 @@ fetch("src/components/about.json")
              <div class="teamMember">
              <img src="https://cdn.glitch.global/c7d70598-61bb-4c55-ac66-58662df41931/Screenshot%202024-11-22%20at%205.34.12%E2%80%AFPM.png?v=1732315387443" alt="Varun"/>
                <a target="_blank" href="${data.varunLink}">${data.varunName}</a>
+              </div>
               </div>
               </div>
               <footer>

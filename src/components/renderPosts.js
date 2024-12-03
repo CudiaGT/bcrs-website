@@ -1,5 +1,7 @@
 import onCampusPost from "./onCampusPost.js";
 import offCampusPost from "./offCampusPost.js";
+import showMoreOffCampus from "./DetailView/showMoreOffCampus.js";
+import showMoreOnCampus from "./DetailView/showMoreOnCampus.js";
 
 export default function renderPosts(data) {
     const onCampusPostTag = document.querySelector(".onCampusPosts")
@@ -8,6 +10,7 @@ export default function renderPosts(data) {
     let onCampusPostCounter = 0;
     onCampusPostTag.innerHTML = onCampusPost(data.oncampus[onCampusPostCounter]);
     onCampusPostTag.innerHTML += onCampusPost(data.oncampus[onCampusPostCounter + 1]);
+    showMoreOnCampus();
     const leftArrowOn = document.querySelector("#onCampusLeftArrow");
     leftArrowOn.addEventListener("click", () => {
         if (onCampusPostCounter === 0) {
@@ -30,6 +33,7 @@ export default function renderPosts(data) {
         else {
             onCampusPostTag.innerHTML += onCampusPost(data.oncampus[onCampusPostCounter + 1])
         }
+        showMoreOnCampus();
     })
     const rightArrowOn = document.querySelector("#onCampusRightArrow");
     rightArrowOn.addEventListener("click", () => {
@@ -46,11 +50,13 @@ export default function renderPosts(data) {
         else {
             onCampusPostTag.innerHTML += onCampusPost(data.oncampus[onCampusPostCounter + 1])
         }
+        showMoreOnCampus();
     });
 
     let offCampusPostCounter = 0;
     offCampusPostTag.innerHTML = offCampusPost(data.offcampus[offCampusPostCounter]);
     offCampusPostTag.innerHTML += offCampusPost(data.offcampus[offCampusPostCounter + 1]);
+    showMoreOffCampus();
     const leftArrowOff = document.querySelector("#offCampusLeftArrow");
     leftArrowOff.addEventListener("click", () => {
         if (offCampusPostCounter === 0) {
@@ -71,6 +77,7 @@ export default function renderPosts(data) {
         else {
             offCampusPostTag.innerHTML += offCampusPost(data.offcampus[offCampusPostCounter + 1])
         }
+        showMoreOffCampus();
     })
     const rightArrowOff = document.querySelector("#offCampusRightArrow");
     rightArrowOff.addEventListener("click", () => {
@@ -87,5 +94,6 @@ export default function renderPosts(data) {
         else {
             offCampusPostTag.innerHTML += offCampusPost(data.offcampus[offCampusPostCounter + 1])
         }
+        showMoreOffCampus();
     });
 }

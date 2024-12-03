@@ -1,6 +1,8 @@
 {
   "oncampus": [
     {
+      "id": 0,
+      "listingLocation": "oncampus",
       "numGroup": 4,
       "numSeek": 2,
       "aim": "6-man housing",
@@ -29,6 +31,8 @@
       ]
     },
     {
+      "id": 1,
+      "listingLocation": "oncampus",
       "numGroup": 3,
       "numSeek": 1,
       "aim": "4-man housing",
@@ -53,6 +57,8 @@
       ]
     },
     {
+      "id": 2,
+      "listingLocation": "oncampus",
       "numGroup": 5,
       "numSeek": 1,
       "aim": "6-man housing",
@@ -85,6 +91,8 @@
       ]
     },
     {
+      "id": 3,
+      "listingLocation": "oncampus",
       "numGroup": 2,
       "numSeek": 2,
       "aim": "4-man housing",
@@ -105,6 +113,8 @@
       ]
     },
     {
+      "id": 4,
+      "listingLocation": "oncampus",
       "numGroup": 3,
       "numSeek": 3,
       "aim": "6-man housing",
@@ -129,6 +139,8 @@
       ]
     },
     {
+      "id": 5,
+      "listingLocation": "oncampus",
       "numGroup": 7,
       "numSeek": 1,
       "aim": "8-man housing",
@@ -169,6 +181,8 @@
       ]
     },
     {
+      "id": 6,
+      "listingLocation": "oncampus",
       "numGroup": 6,
       "numSeek": 2,
       "aim": "8-man housing",
@@ -205,6 +219,8 @@
       ]
     },
     {
+      "id": 7,
+      "listingLocation": "oncampus",
       "numGroup": 3,
       "numSeek": 2,
       "aim": "5-man housing",
@@ -229,6 +245,8 @@
       ]
     },
     {
+      "id": 8,
+      "listingLocation": "oncampus",
       "numGroup": 6,
       "numSeek": 1,
       "aim": "7-man housing",
@@ -265,6 +283,8 @@
       ]
     },
     {
+      "id": 9,
+      "listingLocation": "oncampus",
       "numGroup": 4,
       "numSeek": 4,
       "aim": "8-man housing",
@@ -293,6 +313,8 @@
       ]
     },
     {
+      "id": 10,
+      "listingLocation": "oncampus",
       "numGroup": 3,
       "numSeek": 1,
       "aim": "4-man housing",
@@ -317,6 +339,8 @@
       ]
     },
     {
+      "id": 11,
+      "listingLocation": "oncampus",
       "numGroup": 3,
       "numSeek": 1,
       "aim": "4-man housing",
@@ -341,6 +365,8 @@
       ]
     },
     {
+      "id": 12,
+      "listingLocation": "oncampus",
       "numGroup": 2,
       "numSeek": 2,
       "aim": "4-man housing",
@@ -364,6 +390,7 @@
   
   "offcampus": [
     {
+      "listingLocation": "offcampus",
       "numGroup": 3,
       "numSeek": 2,
       "rent": 1000,
@@ -393,6 +420,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 2,
       "numSeek": 1,
       "rent": 1200,
@@ -418,6 +446,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 4,
       "numSeek": 3,
       "rent": 1100,
@@ -451,6 +480,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 5,
       "numSeek": 2,
       "rent": 800,
@@ -488,6 +518,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 1,
       "numSeek": 1,
       "rent": 1200,
@@ -550,6 +581,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 3,
       "numSeek": 1,
       "rent": 750,
@@ -579,6 +611,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 4,
       "numSeek": 1,
       "rent": 1000,
@@ -612,6 +645,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 5,
       "numSeek": 4,
       "rent": 800,
@@ -649,6 +683,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 2,
       "numSeek": 1,
       "rent": 1300,
@@ -674,6 +709,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 4,
       "numSeek": 4,
       "rent": 1100,
@@ -707,6 +743,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 6,
       "numSeek": 2,
       "rent": 900,
@@ -748,6 +785,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 3,
       "numSeek": 3,
       "rent": 750,
@@ -777,6 +815,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 2,
       "numSeek": 1,
       "rent": 1000,
@@ -802,6 +841,7 @@
       ]
     },
     {
+      "listingLocation": "offcampus",
       "numGroup": 1,
       "numSeek": 1,
       "rent": 1300,

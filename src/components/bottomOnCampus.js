@@ -17,7 +17,7 @@ export default function renderBottomOnCampus(p) {
     </div>
     <div class="bottomIMGcontainer">
       <div class="bottomIMG">
-        <img class="location" src="src/assets/postings/location.png"></img>
+        <img class="location" src="src/assets/postings/location.png" alt="location"></img>
         <span>${p.dorm}</span>
       </div>
       <div class="bottomIMG">
@@ -25,7 +25,7 @@ export default function renderBottomOnCampus(p) {
         <span>${p.numGroup+p.numSeek} People</span>
       </div>
     </div>
-    <div class="showMore onCampus">
+    <div class="showMore onCampus oncampus" id="${p.id}">
         <a href="javascript:void(0)" class="showMoreLink"><span>SHOW MORE...</span></a>
     </div>
     </div>
